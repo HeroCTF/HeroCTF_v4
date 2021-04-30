@@ -8,7 +8,7 @@ jobs:
   hadolint:
     name: Hadolint
     runs-on: ubuntu-20.04
-    container: hadolint/hadolint:v2.3.0-alpine
+    container: hadolint/hadolint:v2.3.0
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
