@@ -16,4 +16,5 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run hadolint
-        run: hadolint ./Web/example/Dockerfile # $(find . -type f -name "Dockerfile*")
+        run: which hadolint
+        # run: hadolint ./Web/example/Dockerfile # $(find . -type f -name "Dockerfile*")
