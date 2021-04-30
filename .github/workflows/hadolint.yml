@@ -9,6 +9,7 @@ jobs:
     name: Hadolint
     runs-on: ubuntu-20.04
     container: hadolint/hadolint:v2.3.0-alpine
+    options: "--entrypoint /bin/ash"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
