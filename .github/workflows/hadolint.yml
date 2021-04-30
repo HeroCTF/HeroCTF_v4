@@ -8,10 +8,10 @@ jobs:
   hadolint:
     name: Hadolint
     runs-on: ubuntu-20.04
-    container: hadolint/hadolint:v2.3.0-debian
+    container: hadolint/hadolint:v2.3.0-alpine
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Run hadolint
-        run: hadolint $(find . -type f -name "Dockerfile*")
+        run: hadolint ./Web/example/Dockerfile # $(find . -type f -name "Dockerfile*")
