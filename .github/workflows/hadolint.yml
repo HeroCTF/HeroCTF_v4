@@ -1,0 +1,17 @@
+name: "Hadolint - Dockerfile linter"
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  hadolint:
+    name: Hadolint
+    runs-on: ubuntu-20.04
+    container: hadolint/hadolint:v2.3.0-alpine
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run hadolint
+        run: hadolint $(find . -type f -name "Dockerfile*")
