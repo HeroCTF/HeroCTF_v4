@@ -1,42 +1,18 @@
-FROM debian:stretch-slim AS builder
+FROM alpine:3.13.1 
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+WORKDIR /usr/src
+RUN apk add --no-cache python3 python3-dev py3-pip socat gcc g++ make libffi-dev openssl-dev
+RUN python3 -m pip install --no-cache-dir pycrypto
 
-RUN apt-get update \
- && apt-get install --no-install-recommends -y \
-    build-essential=12.3 \
-    libffi-dev=3.2.* \
-    libgmp-dev=2:6.1.* \
-    zlib1g-dev=1:1.2.* \
-    curl=7.52.* \
-    ca-certificates=* \
-    git=1:2.11.* \
-    netbase=5.4 \
- && curl -sSL https://get.haskellstack.org/ | sh \
- && rm -rf /var/lib/apt/lists/*
+COPY ./challenge.py /usr/src/challenge.py
+COPY ./entry.sh /usr/src/entry.sh
 
-WORKDIR /opt/hadolint/
-COPY stack.yaml package.yaml /opt/hadolint/
-RUN stack --no-terminal --install-ghc test --only-dependencies
+RUN adduser --disabled-password --no-create-home heroctf
+RUN chown heroctf:heroctf /usr/src/challenge.py
+RUN chown heroctf:heroctf /usr/src/entry.sh
+RUN chmod 540 /usr/src/challenge.py
+RUN chmod 540 /usr/src/entry.sh
 
-COPY . /opt/hadolint
-RUN scripts/fetch_version.sh \
-  && stack install --ghc-options="-fPIC" --flag hadolint:static
+USER heroctf
 
-# COMPRESS WITH UPX
-RUN curl -sSL https://github.com/upx/upx/releases/download/v3.96/upx-3.96-amd64_linux.tar.xz \
-  | tar -x --xz --strip-components 1 upx-3.96-amd64_linux/upx \
-  && ./upx --best --ultra-brute /root/.local/bin/hadolint
-
-FROM debian:stretch-slim AS debian-distro
-COPY --from=builder /root/.local/bin/hadolint /bin/
-CMD ["/bin/hadolint", "-"]
-
-FROM alpine:3 AS alpine-distro
-COPY --from=builder /root/.local/bin/hadolint /bin/
-CMD ["/bin/hadolint", "-"]
-
-FROM scratch
-COPY --from=builder /root/.local/bin/hadolint /bin/
-CMD ["/bin/hadolint", "-"]
-
+ENTRYPOINT ["/usr/src/entry.sh"]
