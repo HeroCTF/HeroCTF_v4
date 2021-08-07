@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-categories=( Blockchain Crypto Forensics Misc OSINT Pwn Reverse Steganography System Web )
+categories=( Blockchain Crypto Forensics Misc OSINT Prog Pwn Reverse Steganography System Web )
 
 for category in "${categories[@]}"
 do
