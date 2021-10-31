@@ -1,0 +1,31 @@
+---
+name: Overload
+author: xanhacks
+category: Prog
+description: Find the flag hidden in this `txt` file. 
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "heroctf{wellplayedprogmaster}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - prog
+
+files:
+    - overload.txt
+
+state: visible 
+version: "0.1"

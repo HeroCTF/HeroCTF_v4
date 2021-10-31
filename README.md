@@ -2,7 +2,7 @@
 
 # HeroCTF V4
 
-HeroCTF is an online cybersecurity competition for beginners or intermediates that takes place twice a year.
+HeroCTF is an online cybersecurity competition for beginners to advanced players that takes place once a year.
 
 Start : ???<br>
 End : ???
