@@ -18,7 +18,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "heroctf{wellplayedprogmaster}",
+        content: "hero{wellplayedprogmaster}",
         data: "case_insensitive",
     }
 
