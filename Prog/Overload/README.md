@@ -8,8 +8,8 @@ Prog
 
 Find the flag hidden in this `txt` file.
 
-Format : **Hero{flag}**<br>
-Author : **xanhacks**
+Format : hero{flag}<br>
+Author : xanhacks
 
 ### Files
 
