@@ -35,16 +35,16 @@ with open("overload.txt", "r") as overload:
 
 ```bash
 $ python3 solve.py
-heroctf{wellplayedprogmaster}
+hero{wellplayedprogmaster}
 ```
 
 2. Using bash :
 
 ```bash
 $ cat overload.txt | tr -d '[:upper:]'
-heroctf{wellplayedprogmaster}
+hero{wellplayedprogmaster}
 ```
 
 ### Flag
 
-heroctf{wellplayedprogmaster}
+hero{wellplayedprogmaster}

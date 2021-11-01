@@ -3,7 +3,7 @@ from os import getenv
 from random import randint, choice
 from string import ascii_uppercase
 
-flag = getenv("FLAG") if getenv("FLAG") else "heroctf{wellplayedprogmaster}"
+flag = getenv("FLAG") if getenv("FLAG") else "hero{wellplayedprogmaster}"
 min_number, max_number = 10, 100
 
 
