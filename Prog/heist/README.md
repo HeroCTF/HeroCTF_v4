@@ -1,10 +1,10 @@
 # Heist
 
-## Category
+### Category
 
 Prog
 
-## Description
+### Description
 
 This new online bank is supposely unbreakable. They want us to prove it to the world. Here is the source code. It's messy, but simple. I can feel something's wrong, but I am not sure what.<br>
 Help me out will you ?
@@ -17,7 +17,11 @@ Port : xxxx
 Format : **Hero{flag}**<br>
 Author : **Log_s**
 
-## Write up
+### Files
+
+ - [chall.py](chall.py)
+
+### Write up
 
 The interesting part is the part handling the money transfers : 
 ```python
@@ -48,6 +52,6 @@ receiver.balance = receiver.balance + (-100)
 Since there is no check on the receiver's side, you can give yourself illimited money, even if the BANK only has 100€.
 
 Now you just have to buy the flag :)
-## Flag
+### Flag
 
 ```Hero{ch3ck_4_n3g4t1v3s}```

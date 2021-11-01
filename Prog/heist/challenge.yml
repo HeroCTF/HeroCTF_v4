@@ -1,0 +1,40 @@
+---
+name: Heist
+author: Log_s
+category: Prog
+description: "This new online bank is supposely unbreakable. They want us to prove it to the world. Here is the source code. It's messy, but simple. I can feel something's wrong, but I am not sure what.<br>
+Help me out will you ?
+
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{ch3ck_4_n3g4t1v3s}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - prog
+
+files:
+    - chall.py
+
+state: visible 
+version: "0.1"
