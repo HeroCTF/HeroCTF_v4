@@ -2,7 +2,7 @@
 
 # HeroCTF V4
 
-HeroCTF is an online cybersecurity competition for beginners or intermediates that takes place twice a year.
+HeroCTF is an online cybersecurity competition for beginners to advanced players that takes place once a year.
 
 Start : ???<br>
 End : ???
@@ -15,10 +15,12 @@ Github  : https://github.com/HeroCTF
 
 # Challenges
 
-| Name                                                             | Category      | Author     | Score  |
-|------------------------------------------------------------------|:-------------:|:----------:|:------:|
-| [Heist](Prog/heist/)                                             | Prog          | Log_s      | XXX    |
+**Total :** XX challenges.
+
+| Name                                                             | Category      | Author     | Difficulty  |
+|------------------------------------------------------------------|:-------------:|:----------:|:-----------:|
+| [Heist](Prog/heist/)                                             | Prog          | Log\_s     | X           |
+| [Overload](Prog/Overload/)                                       | Prog          | xanhacks   | Easy        |  
 
 
 
-**Total : XX challenges (XXXX points)**
