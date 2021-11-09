@@ -35,6 +35,7 @@ def getFirstPiece(stack):
         if not found:
             ret = piece
             del piece
+            break
         if (i%1000) == 0:
             print(f"{i}/{len(stack)}")
     stack.remove(ret)
@@ -84,6 +85,7 @@ print(f"[+] Got First Piece in {time.time() - start}")
 
 while len(stack) > 0:
     direction = getDirection(current)
+    #print(direction, current)
     lastPiece = []
     if direction == "right":
         lastPiece = solution[current[0]-1][current[1]][current[2]]
@@ -95,14 +97,13 @@ while len(stack) > 0:
     solution[current[0]][current[1]][current[2]] = nextPiece
     current = (current[0]+1, current[1], current[2])
     if current[0] == s:
-        current = (0, current[1]+1)
+        current = (0, current[1]+1, current[2])
     if current[1] == s:
         current = (0, 0, current[2]+1)
     if len(stack)%s == 0:
         print(f"[+] {len(stack)} pieces left")
 
 
-# TODO
 flag = ""
 for i in range(s):
     flag += solution[i][i][i][-1]

@@ -1,3 +1,5 @@
+# TODO : make sure corners are centered
+
 import secrets
 from puzzle import Piece
 import uuid
