@@ -1,0 +1,37 @@
+---
+name: SSHs
+author: Log_s
+category: Prog
+description: "Every user can read the private rsa key of the next user. You just have to grab it, and ssh as the next. But... there are 250 ?!?<br>
+Let's automate it ! (The last user has a *flag.txt* at the root of his home directory)
+
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Th47_w3RE_4_l0t_Of_uS3rS}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - prog
+
+state: visible 
+version: "0.1"

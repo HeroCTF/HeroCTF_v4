@@ -20,6 +20,7 @@ Github  : https://github.com/HeroCTF
 | Name                                                             | Category      | Author     | Difficulty  |
 |------------------------------------------------------------------|:-------------:|:----------:|:-----------:|
 | [Heist](Prog/heist/)                                             | Prog          | Log\_s     | X           |
+| [SSHs](Prog/SSHs/)                                               | Prog          | Log\_s     | X           |
 | [Overload](Prog/Overload/)                                       | Prog          | xanhacks   | Easy        |  
 
 
