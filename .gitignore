@@ -1,1 +1,4 @@
 .ctf
+.vscode
+.idea
+__pycache__/
