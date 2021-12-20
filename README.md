@@ -21,8 +21,8 @@ Github  : https://github.com/HeroCTF
 |------------------------------------------------------------------|:-------------:|:----------:|:-----------:|
 | [Heist](Prog/heist/)                                             | Prog          | Log\_s     | Easy        |
 | [Pixel Poney](Prog/pixel_poney/)                                 | Prog          | Log\_s     | Easy        |
-| [SSHs](Prog/SSHs/)                                               | Prog          | Log\_s     | Medium      |
 | [Overload](Prog/Overload/)                                       | Prog          | xanhacks   | Easy        |  
+| [SSHs](Prog/SSHs/)                                               | Prog          | Log\_s     | Medium      |
 
 
 
