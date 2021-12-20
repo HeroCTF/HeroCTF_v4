@@ -30,7 +30,7 @@ flags:
     }
 
 tags:
-    - easy
+    - medium
     - prog
 
 state: visible 
