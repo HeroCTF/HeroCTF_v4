@@ -24,6 +24,7 @@ Github  : https://github.com/HeroCTF
 | [Overload](Prog/Overload/)                                       | Prog          | xanhacks   | Easy        |  
 | [SSHs](Prog/SSHs/)                                               | Prog          | Log\_s     | Medium      |
 | [Daedalus](Prog/daedalus/)                                       | Prog          | Log\_s     | Hard        |
+| [SmallMistakeBigMistake](Web/SmallMistakeBigMistake/)            | Web           | xanhacks   | Easy        |
 
 
 

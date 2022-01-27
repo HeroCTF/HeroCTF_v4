@@ -1,15 +1,15 @@
 ---
-version: "2.2"
+version: '2.2'
 
 services:
 
-	smallmistake:
-		build: ./SmallMistakeBigMisktage/
-		restart: always
-		environment:
-			- PORT=5000
-			- FLAG='Hero{Sm4ll_Mist4ke_c4n_be_d4ngerous_10853085}'
-		ports:
-			- "5000:5000"
-	    cpus: 0.5
-	    mem_limit: 1024m
+  smallmistake:
+    build: ./SmallMistakeBigMistake/
+    restart: always
+    environment:
+      - PORT=5000
+      - FLAG=Hero{Sm4ll_Mist4ke_c4n_be_d4ngerous_10853085}
+    ports:
+      - "5000:5000"
+    cpus: 0.5
+    mem_limit: 1024m
