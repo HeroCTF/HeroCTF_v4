@@ -1,0 +1,37 @@
+name: "SmallMistakeBigMistake"
+author: "xanhacks"
+category: Web
+description: "The website developer made a small mistake in the code of his website.
+
+Can you identify and exploit it to extract the flag?
+
+URL : http://xxx
+
+Format : **Hero{flag}**<br>
+Auteur : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 200
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Sm4ll_Mist4ke_c4n_be_d4ngerous_10853085}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - web
+
+files:
+    - src/main.py
+
+state: visible
+version: "0.1"
