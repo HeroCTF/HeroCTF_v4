@@ -1,0 +1,1 @@
+echo "File integrity : OK"
