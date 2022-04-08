@@ -2,8 +2,7 @@
 name: $ where backdoor
 author: Log_s
 category: Web
-description: "This new online bank is supposely unbreakable. They want us to prove it to the world. Here is the source code. It's messy, but simple. I can feel something's wrong, but I am not sure what.<br>
-Help me out will you ?
+description: "These web masters are trying to show off their skills. But in reality, there are kind of lazy. They left a backdoor on the server for them to do some maintenance. Find it, exploit it :)
 
 ```
 Host : xxxx.heroctf.fr
