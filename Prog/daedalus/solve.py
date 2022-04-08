@@ -106,20 +106,11 @@ def get_grid(socket):
     return grid
 
 
-DEBUG = False
-
 if __name__ == "__main__":
-    if DEBUG:
-        lines = open("levels/level3", "r").read().split("\n\n")[0].split("\n")
-        grid = []
-        for line in lines:
-            grid.append([x for x in line])
-        print(count_loops(grid))
-    else:
-        r = remote(host, port)
+    r = remote(host, port)
 
-        for i in range(6):
-            grid = get_grid(r)
-            nb_loops = str(count_loops(grid))
-            r.sendline(nb_loops.encode())
-            print(nb_loops)
+    for i in range(6):
+        grid = get_grid(r)
+        nb_loops = str(count_loops(grid))
+        r.sendline(nb_loops.encode())
+        print(nb_loops)

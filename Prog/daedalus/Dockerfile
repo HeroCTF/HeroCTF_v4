@@ -2,10 +2,11 @@ FROM ubuntu:18.04
 
 RUN apt-get update
 RUN apt-get install -y socat
-RUN apt-get install -y python3
+RUN apt-get install -y python3.10
 
 RUN mkdir /deadalus
 COPY ./chall.py /deadalus/
+COPY ./solve.py /deadalus/
 COPY ./entry.sh /deadalus/
 COPY ./flag.txt /deadalus/
 COPY ./levels/ /deadalus/levels
