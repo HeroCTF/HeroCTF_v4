@@ -1,0 +1,36 @@
+---
+name: Redacted
+author: Log_s
+category: Steganography
+description: "An admin leaked a confidential document. Unfortunatly, the juicy part is redacted... But that won't stop you, will it ?
+
+<b>/!\ The flag format is different from the other flags !</b>
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "HeroCTF{n0_p1x3Ls}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - stega
+
+files:
+    - confidential.pdf
+
+state: visible 
+version: "0.1"
