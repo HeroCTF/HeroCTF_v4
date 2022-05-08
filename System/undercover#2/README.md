@@ -1,4 +1,4 @@
-# $ undercover#2
+# Undercover#2
 
 ### Category
 

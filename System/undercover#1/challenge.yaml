@@ -1,0 +1,36 @@
+---
+name: undercover#1
+author: Log_s
+category: System
+description: "You have been recruited by the CEO of Hero & Co. to test their security. But before handing you out the assignement, the asked you have to prove yourself, and escalate your privileges on this test system all the way to root.
+
+The base credentials are:
+```
+user1:password123
+```
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{B4ck_2_b4s1cs}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - system
+
+state: visible 
+version: "0.1"

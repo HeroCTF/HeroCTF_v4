@@ -8,6 +8,11 @@ Web
 These web masters are trying to show off their skills. But in reality, there are kind of lazy. They left a backdoor on the server for them to do some maintenance.
 Find it, exploit it :)
 
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+
 Format : **Hero{flag}**<br>
 Author : **Log_s**
 

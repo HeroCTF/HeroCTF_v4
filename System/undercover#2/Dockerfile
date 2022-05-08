@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
 
 # Install dependecies
-RUN apt update && apt install openssh-server sudo apache2 curl openssh-client php libapache2-mod-php vim -y
+RUN apt update && apt install openssh-server sudo apache2 curl openssh-client php libapache2-mod-php -y
 
 # Setup php server
 RUN a2enmod mpm_prefork && sudo a2enmod php*
