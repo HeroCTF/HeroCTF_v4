@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Flower CDN - Internal documentation</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img
+                        src="/assets/img/logo.png"
+                        height="70"
+                        alt="Flower CDN Logo"
+                        loading="lazy"
+                    />
+                    </a>
+                </div>
+          </div>
+              </div>
+          </nav>
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="text-center">
+                          <p class="lead">Welcome on  internal documentation of Flower CDN !</p>
+                          <p>Here, you will found documentation for our internal tools.</p>
+                          <hr/>
+                          <h3>Choose a project ! 🚧</h3>
+                          <div class="row" id="whyus">
+                            <div class="col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title"><a href="" data-toggle="modal" data-target="#modalDirectory">Internal directory service</a> 🔎</h5>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title"><a href="" data-toggle="modal" data-target="#modalFlower">Flower CDN</a> 💽</h5>
+                                </div>
+                              </div>
+                            </div>
+                            <hr/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal fade" id="modalDirectory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Internal Directory Service<br>Documentation</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="text-center">
+                            <p>This API is used to search for people in our company:</p>
+                            <ul>
+                                <li>/ : <br>Method: GET<br>Params: ❌<br>Goal: Show you a welcome message 😊</li>
+                                <br/>
+                                <li>/search : <br>Method : GET <br>Params : <br>- name : name of employee <br>- surname : surname of employee<br>- searchby : name or surname<br> Goal : Search for a person in the directory 🔎</li>
+                            </ul>
+                            <p>You can download the source code <a href="assets/zip/internal_directory_service_source_code.zip">here.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalFlower" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Flower CDN<br>Documentation</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="text-center"><p>There is not yet an admin panel, documentation will come when it will be deployed ! 💯</p></div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

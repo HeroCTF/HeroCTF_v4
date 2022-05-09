@@ -1,0 +1,12 @@
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+Options -Indexes
+RewriteEngine On 
+
+RewriteRule ^account/create$ api/accounts/register.php
+RewriteRule ^account/login$ api/accounts/login.php
+RewriteRule ^account/logout$ api/accounts/logout.php
+RewriteRule ^user/data/get$ api/user/get_data.php
+RewriteRule ^user/data/new$ api/user/new_data.php
+RewriteRule ^user/data/delete$ api/user/delete_data.php

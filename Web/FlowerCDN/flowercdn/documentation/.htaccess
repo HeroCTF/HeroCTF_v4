@@ -1,0 +1,6 @@
+Options -Indexes
+AuthType Basic
+AuthName "Restricted to people from the company"
+AuthBasicProvider file
+AuthUserFile "/etc/apache2/passwords"
+Require user admin

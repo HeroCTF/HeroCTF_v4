@@ -1,0 +1,196 @@
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img
+                    src="/assets/img/logo.png"
+                    height="70"
+                    alt="Flower CDN Logo"
+                    loading="lazy"
+                />
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="" data-toggle="modal" data-target="#modalLogin">Login</a>
+                  </li>
+                </ul>
+            </div>
+      </div>
+          </div>
+      </nav>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <div class="text-center">
+                      <p class="lead">Welcome on Flower CDN !</p>
+                      <p>The new CDN service that allows you to store your images and load them from your website(s) almost immediately.</p>
+                      <hr/>
+                      <h3>Why us ? 🕺</h3>
+                      <div class="row" id="whyus">
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">👩‍🎓 We are a team of young, graduate and talented people 🧑‍🎓 </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">🚀 Our service have the best speed of image loading on the web 🚀</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">🙂 Our team is very friendly and we love all of our customers 🤲🏼</h5>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">🏋🏻‍♀️ We have specialists in cybersecurity inside of our team which help to provide a safe service 🏋🏻</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr/>
+                        <h3>Our team 💪</h3>
+                        <ul class="list-inline">
+                            <li>🥷 : 3 cybersecurity specialists</li>
+                            <li>🖥️ : 8 developers</li>
+                            <li>🧑‍💼 : 3 business employees</li>
+                            <li>🆘 : 2 persons for after sales service</li>
+                        </ul>
+                        <hr/>
+                        <p>Ready to work with us? Then get <a href="" data-toggle="modal" data-target="#modalRegister">started</a> ! 💯</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Create an account</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="alias" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="alias" required>Your alias 🥷🏿</label>
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="password" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="password" required>Your password 🔑</label>
+              </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <input type="button" class="btn btn-primary" value="Register" onclick="register()" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="alias_login" class="form-control validate" required>
+                <label data-error="wrong" data-success="right" for="alias_login">Your alias 🥷🏿</label>
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="password_login" class="form-control validate" required>
+                <label data-error="wrong" data-success="right" for="password_login">Your password 🔑</label>
+              </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <input type="button" class="btn btn-primary" value="Login" onclick="login()" />
+            </div>
+          </div>
+        </div>
+      </div>
+  <script>
+    function register()
+    {
+      let alias = $("#alias").val()
+      let password = $("#password").val()
+      if(alias.length > 0 && password.length > 0)
+      {
+        $.ajax({
+          type: "POST",
+          url: "/account/create",
+          dataType: "json",
+          data: {"alias":alias,"password":password},
+          success: function(data)
+          {
+            if(data["err"]) alert(data["err"])
+            else if(data["ok"]){ 
+              alert("Your account has been created ! You can now login !") ? "" : location.reload()
+            }else{
+              alert("Unknown error, please try again.");
+            }
+          }
+        })
+      }else alert("Alias or password can't be empty !")
+    }
+
+    function login()
+    {
+      let alias = $("#alias_login").val()
+      let password = $("#password_login").val()
+      console.log(alias)
+      if(alias.length > 0 && password.length > 0)
+      {
+        $.ajax({
+          type: "POST",
+          url: "/account/login",
+          dataType: "json",
+          data: {"alias":alias,"password":password},
+          success: function(data)
+          {
+            if(data["err"]) alert(data["err"])
+            else if(data["ok"]){
+               location.reload()
+            }else{
+              alert("Unknown error, please try again.");
+            }
+          }
+        })
+      }else alert("Alias or password can't be empty !")
+    }
+  </script>
+  </body>

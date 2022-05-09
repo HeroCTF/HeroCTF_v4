@@ -1,0 +1,182 @@
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="/assets/img/logo.png"
+            height="70"
+            alt="Flower CDN Logo"
+            loading="lazy"
+          />
+        </a>
+      </div>
+        
+      <div class="d-flex align-items-center">
+        <li class="nav-item dropdown" style="list-style: none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img
+              src="https://pbs.twimg.com/profile_images/1257438197149294596/EaA1JF_x_400x400.jpg"
+              class="rounded-circle"
+              height="35"
+              alt="Basic photo for free user"
+              loading="lazy"
+            />
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" onclick="alert('Free user can\'t modified their data')" href="#">Profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/account/logout">Logout</a>
+          </div>
+        </li>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <a href="" data-toggle="modal" class="btn btn-primary" data-target="#modalAddImage">Add new image</a>
+          <hr/>
+          <div class="modal fade" id="modalAddImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h4 class="modal-title w-100 font-weight-bold">Add new image</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body mx-3">
+                  <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="file" id="file" class="form-control validate" accept=".jpg,.jpeg,.png">
+                    <label data-error="wrong" data-success="right" for="file">From your PC 💻</label>
+                  </div>
+
+                  <div class="md-form mb-4">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <input type="text" id="url" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="url">From a URL 🌐</label>
+                  </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <input type="button" class="btn btn-primary" value="Add new image" onclick="sendImage()" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="nothing"></div>
+          <div id="gallery" class="row"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $.ajax({
+          type: "GET",
+          url: "/user/data/get",
+          data: {"size":10},
+          dataType: "json",
+          success: function(data)
+          {
+            let host = data['host']
+            delete data['host']
+            if(Object.keys(data).length > 0)
+            {
+              let final_html = ""
+              let template =  `<div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">{imglink}</h5>
+                              <p>{imagenb}</p>
+                              <p>{fulllink}</p>
+                              <p>{btndelete}
+                            </div>
+                          </div>
+                        </div>`
+              for(let i=0; i<Object.keys(data).length; i++)
+              {
+                final_html += template.replace("{imglink}",`<img src='${data[i]["link_to_img"]}' style="max-width: 90px; max_height: 90px;" onerror="alert('There is an error with the image at link http://${host}${data[i]['link_to_img']}, we advise you to delete it and reupload it.')">`).replace("{imagenb}",`Image with id ${i+1}`).replace("{btndelete}",`<input type='button' onclick='deleteImg(${data[i]["id"]})' class='btn btn-danger' value='Delete this image'>`).replace("{fulllink}",`Link to integrate this image:<br>http://${host}${data[i]['link_to_img']}`)
+              }
+              $("#gallery").append(final_html)
+            }else $("#nothing").append('<p class="lead">You didn\'t have anything in your gallery 😪</p>')
+          }
+        })
+      })
+
+      function sendImage()
+      {
+        if($("#url").val().length === 0)
+        {
+          let fd = new FormData()
+          let files = $("#file")[0].files[0]
+          fd.append('file',files)
+          $.ajax({
+            url: "/user/data/new",
+            type: "POST",
+            data: fd,
+            contentType: false,
+            processData: false,
+            dataType: "json",
+            success: function(data)
+            {
+              if(data["err"]) alert(data["err"])
+              else if(data["ok"]){
+                alert("File added to your gallery !") ? "" : location.reload()
+              }else{
+                alert("Unknown error, please try again.")
+              }
+            }
+          })
+        }else{
+          let url = $("#url").val()
+          $.ajax({
+            url: "/user/data/new",
+            type: "POST",
+            data: {"url": url},
+            dataType: "json",
+            success: function(data)
+            {
+              if(data["err"]) alert(data["err"])
+              else if(data["ok"]){
+                alert("File downloaded and added to your gallery !") ? "" : location.reload()
+              }else{
+                alert("Unknown error, please try again.")
+              }
+            }
+          })
+        }
+      }
+
+      function deleteImg(id)
+      {
+        $.ajax({
+          url: "/user/data/delete",
+          type: "POST",
+          data: {"id":id},
+          dataType: "json",
+          success: function(data){
+            if(data["err"]) alert(data["err"])
+              else if(data["ok"]){
+                alert("File deleted successfully !") ? "" : location.reload()
+              }else{
+                alert("Unknown error, please try again.")
+              }
+          }
+        })
+      }
+    </script>
+</body>
