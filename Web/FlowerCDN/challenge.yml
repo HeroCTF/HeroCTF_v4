@@ -1,0 +1,36 @@
+---
+name: Flower CDN
+author: Worty
+category: Web
+description: "You are mandated to pentest this new CDN solution.
+To prove your exploitation, the company claims that it is impossible for you to reveal the name of its general manager, who is supposed to remain secret.
+It's up to you to find him.
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+Format : **Hero{name:surname}**<br>
+Author : **Worty**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Dominique:Lavigne}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - web
+
+state: visible 
+version: "0.1"
