@@ -1,4 +1,4 @@
-# LSD
+# HyperCube%7
 
 ### Category
 
@@ -9,10 +9,14 @@ Steganography
 IEEE 5529581
 
 Hints : 
-Modulo 7\n
-n = 3\n
-Flag Height : 100\n
-Flag Width : 100\n
+Modulo 7
+
+n = 3
+
+Flag Height : 100
+
+Flag Width : 100
+
 To pass from a pixel to a decimal number: It is necessary to make a conversion of the greyscale value of the pixel of a base 2n+1 to a base 10
 
 Format : Hero{}<br>
