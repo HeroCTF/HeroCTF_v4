@@ -34,6 +34,8 @@ First, we will convert each character of the secret into digits.
 
 We will then hide a digits in each group of n pixels of the cover image. For each group of n pixels, we will give them a decimal value f according to the formula. We then take the value d of our k-th secret digits and compare it with the value f of the group. 
 
+![Formula](formulaF.png)
+
 First case : f = d then there is no modification to make.
 
 Second case : f != d then we calculate the difference between d and f with the formula s = d - f % (2n+1). If s is smaller than n then we add 1 to the value of the pixel in position g(s). If s is greater than n then we subtract 1 to the value of the pixel in position g(2n+1-s).
