@@ -116,9 +116,6 @@ func encryption(cover *image.Gray, stego *image.Gray) *image.Gray {
 	stegoBounds := stego.Bounds()
 	//stego image width and height
 	stegoW, stegoH := stegoBounds.Max.X, stegoBounds.Max.Y
-	//if mode is 0 then use module 5 for encryption
-	//if mode is 1 then use module 7 for encryption
-	//if mode is -1, can't encrypt
 
 	//(x+2y+3z)%7
 	for i := 0; i < stegoW*stegoH; i++ {
