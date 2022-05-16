@@ -34,5 +34,8 @@ Github  : https://github.com/HeroCTF
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
 | [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ❌  |
 | [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Hard        |  ❌  |
-
-
+| [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
+| [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
+| [HeroGuessr #1](Osint/HeroGuessr#1/)                                | Osint         | yarienkiva | Easy        |  ❌  |
+| [HeroGuessr #2](Osint/HeroGuessr#2/)                                | Osint         | yarienkiva | Medium      |  ❌  |
+| [HeroGuessr #3](Osint/HeroGuessr#3/)                                | Osint         | yarienkiva | Hard        |  ❌  |
