@@ -1,0 +1,34 @@
+---
+name: The oracle's apprentice
+author: yarienkiva
+category: Crypto
+description: "Looks like the oracle took a nice long holiday and her apprentice had to cover for her.
+She's new to the job so if she forgets anything... you'll just have to deal with it.
+Good luck !"
+
+value: null
+type: dynamic
+extra:
+    initial: 100
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{m4ybe_le4ving_the_1nt3rn_run_th3_plac3_wasnt_a_g00d_id3a}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - crypto
+
+files:
+    - chall.py
+
+state: visible 
+version: "0.1"
