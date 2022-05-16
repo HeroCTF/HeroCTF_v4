@@ -17,17 +17,22 @@ Github  : https://github.com/HeroCTF
 
 **Total :** XX challenges.
 
-| Name                                                             | Category      | Author     | Difficulty  |
-|------------------------------------------------------------------|:-------------:|:----------:|:-----------:|
-| [Heist](Prog/heist/)                                             | Prog          | Log\_s     | Easy        |
-| [Pixel Poney](Prog/pixel_poney/)                                 | Prog          | Log\_s     | Easy        |
-| [Overload](Prog/Overload/)                                       | Prog          | xanhacks   | Easy        |  
-| [SSHs](Prog/SSHs/)                                               | Prog          | Log\_s     | Medium      |
-| [Daedalus](Prog/daedalus/)                                       | Prog          | Log\_s     | Hard        |
-| [SmallMistakeBigMistake](Web/SmallMistakeBigMistake/)            | Web           | xanhacks   | Easy        |
-| [$ where backdoor](Web/whereBackdoor/)                           | Web           | Log\_s     | Medium      |
-| [Undercorver #1](System/undercover#1/)                           | System        | Log\_s     | Easy        |
-| [Undercorver #2](System/undercover#2/)                           | System        | Log\_s     | Medium      |
-| [Redacted](Steganography/Redacted/)                              | Steganography | Log\_s     | Medium      |
+| Name                                                                | Category      | Author     | Difficulty  | Done |
+|---------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
+| [Heist](Prog/heist/)                                                | Prog          | Log\_s     | Easy        |  ✅  |
+| [Pixel Poney](Prog/pixel_poney/)                                    | Prog          | Log\_s     | Easy        |  ✅  |
+| [Overload](Prog/Overload/)                                          | Prog          | xanhacks   | Easy        |  ✅  |
+| [SSHs](Prog/SSHs/)                                                  | Prog          | Log\_s     | Medium      |  ✅  |
+| [Daedalus](Prog/daedalus/)                                          | Prog          | Log\_s     | Hard        |  ✅  |
+| [SmallMistakeBigMistake](Web/SmallMistakeBigMistake/)               | Web           | xanhacks   | Easy        |  ✅  |
+| [$ where backdoor](Web/whereBackdoor/)                              | Web           | Log\_s     | Medium      |  ✅  |
+| [Undercorver #1](System/undercover#1/)                              | System        | Log\_s     | Easy        |  ✅  |
+| [Undercorver #2](System/undercover#2/)                              | System        | Log\_s     | Medium      |  ✅  |
+| [BlackOps](System/BlackOps/)                                          | System        | Log\_s     | Hard        |  ❌  |
+| [Redacted](Steganography/Redacted/)                                 | Steganography | Log\_s     | Medium      |  ✅  |
+| [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
+| [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
+| [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ❌  |
+| [LSD](Steganography/LSD/)                                            | Steganography | Thibz      | Hard        |  ❌  |
 
 
