@@ -1,0 +1,6 @@
+Hi !
+
+Here is the servers sample you ordered. I had troubles with some libraries on a few test systems. Removing them does the trick for now, until I find a fix.
+For security reasons, you can't edit any files, but I copied you an SUID enabled copy of the rm binary, if you need to remove files in order to run the project.
+
+Cheers
