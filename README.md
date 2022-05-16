@@ -28,7 +28,7 @@ Github  : https://github.com/HeroCTF
 | [$ where backdoor](Web/whereBackdoor/)                              | Web           | Log\_s     | Medium      |  ✅  |
 | [Undercorver #1](System/undercover#1/)                              | System        | Log\_s     | Easy        |  ✅  |
 | [Undercorver #2](System/undercover#2/)                              | System        | Log\_s     | Medium      |  ✅  |
-| [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ❌  |
+| [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [Redacted](Steganography/Redacted/)                                 | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |

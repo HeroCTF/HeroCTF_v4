@@ -17,6 +17,7 @@ RUN gcc -s -c /tmp/kc.c -o /tmp/kc.o
 RUN gcc -s -o /tmp/kc /tmp/kc.o -L/tmp -lgenports
 RUN gcc -s /tmp/main.c -o /tmp/restart_servers
 RUN rm /tmp/*.c /tmp/*.o
+RUN mkdir /home/user1/servers/utils/
 RUN mv /tmp/restart_servers /home/user1/servers/utils/restart_servers
 RUN cp /bin/rm /home/user1/servers/rm
 RUN chmod +s /home/user1/servers/utils/restart_servers /home/user1/servers/rm
