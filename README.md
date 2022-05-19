@@ -39,3 +39,6 @@ Github  : https://github.com/HeroCTF
 | [HeroGuessr #1](Osint/HeroGuessr#1/)                                | Osint         | yarienkiva | Easy        |  ❌  |
 | [HeroGuessr #2](Osint/HeroGuessr#2/)                                | Osint         | yarienkiva | Medium      |  ❌  |
 | [HeroGuessr #3](Osint/HeroGuessr#3/)                                | Osint         | yarienkiva | Hard        |  ❌  |
+| [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
+| [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
+| [sELF control v2](Pwn/sELF%20control%20v2/)                         | Reverse       | SoEasY     | Medium      |  ❌  |

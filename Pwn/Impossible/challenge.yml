@@ -1,0 +1,43 @@
+---
+name: Impossible
+author: SoEasY
+category: Pwn
+description: "
+Your colleague trolls you by giving you an impossible challenge, betting $100 that you won't succeed.
+Show him who's the boss!
+
+
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Th3r3_1s_n0_w4y_y0u_d1d_1t_CH34T3R!!!!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - pwn
+    - crypto
+
+files:
+    - Impossible
+
+state: visible 
+version: "0.1"

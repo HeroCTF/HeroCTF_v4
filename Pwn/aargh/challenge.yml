@@ -1,0 +1,40 @@
+---
+name: Impossible
+author: SoEasY
+category: Pwn
+description: "
+Get this stranger's secret !
+
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{ret2csu_1s_th3_w4y_f0r_th1s_f4ncy_aarch64_ROP!!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - pwn
+
+files:
+    - aargh
+
+state: visible 
+version: "0.1"
