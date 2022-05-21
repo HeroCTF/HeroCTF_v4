@@ -1,0 +1,37 @@
+---
+name: MVBD
+author: SoEasY
+category: Reverse
+description: "
+Some french student told me about a «Machine Virtuelle de Bas Niveau» project, but I don't speak french.
+Do you know what he was talking about ?
+
+Format : **Hero{flag}**<br>
+Author : **SoEasY**
+"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{LLVM_1s_4_v3ry_c00l_pr0j3ct}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - reverse
+
+files:
+    - MVBD
+
+state: visible 
+version: "0.1"
