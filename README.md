@@ -43,4 +43,4 @@ Github : https://github.com/HeroCTF
 | [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
 | [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Easy        |  ❌  |
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
-| [sELF control v2](Pwn/sELF%20control%20v2/)                         | Reverse       | SoEasY     | Medium      |  ❌  |
+| [sELF control v2](Reverse/sELF%20control%20v2/)                         | Reverse       | SoEasY     | Medium      |  ❌  |
