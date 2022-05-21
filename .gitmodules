@@ -1,0 +1,9 @@
+[submodule "Reverse/Turing/movfuscator"]
+	path = Reverse/Turing/movfuscator
+	url = https://github.com/xoreaxeaxeax/movfuscator
+[submodule "Reverse/Turing/demovfuscator"]
+	path = Reverse/Turing/demovfuscator
+	url = https://github.com/kirschju/demovfuscator
+[submodule "Reverse/Paint/REpsych"]
+	path = Reverse/Paint/REpsych
+	url = https://github.com/xoreaxeaxeax/REpsych
