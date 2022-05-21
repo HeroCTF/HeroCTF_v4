@@ -1,0 +1,42 @@
+---
+name: sELF control v2
+author: SoEasY
+category: Reverse
+description: "
+I've got this weird ELF, some stranger told me that I would be rewarded if I could fix it...
+Can you help me ?
+
+```
+Host : xxxx.heroctf.fr
+Port : xxxx
+```
+
+Format : **Hero{flag}**<br>
+Author : **SoEasY**
+"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{W0w_s0_y0u_4r3_4n_ELF_h34d3r_M4sT3r_but_d1d_y0u_kn0w_4b0ut_ELF_g0lfing???}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - reverse
+
+files:
+    - EXECUTE_ME
+
+state: visible 
+version: "0.1"
