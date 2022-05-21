@@ -1,0 +1,35 @@
+---
+name: Redacted
+author: Log_s
+category: Steganography
+description: "Your software engineer sent you this file, making a proud face. 
+Can you find the flag ?
+
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{OMG_I_love_so_much_painting_in_control_flow_graph!!!",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - stega
+
+files:
+    - Painting
+
+state: visible 
+version: "0.1"
