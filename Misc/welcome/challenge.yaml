@@ -1,0 +1,31 @@
+---
+name: Welcome
+author: Log_s
+category: misc
+description: "Did you pay attention to everything going on before the start of the CTF ?
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{W3lcome_2_h3r0CTF_v4_h4ve_Fun!!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - misc
+
+state: visible 
+version: "0.1"

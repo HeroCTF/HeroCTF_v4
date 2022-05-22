@@ -1,12 +1,12 @@
 ---
-name: undercover#2
+name: BlackOps
 author: Log_s
 category: System
-description: "This is your first real assignemnt. You have to assess the security of one of our developpers systems. He's a very good coder, but not that good at keeping his system safe. Could you report to us any vulnerabilities you find in his system?
+description: "You asked a friend to set you up with a few samples of http server in different languages for you to test out. He opened an access to one of his machines. He didn't give you admin access, but maybe there is a way to play a trick on him ;)
 
 The base credentials are:
 ```
-user:password123
+user1:password123
 ```
 
 Format : **Hero{flag}**<br>
@@ -24,12 +24,12 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{3w-d4ta_1s_n0t_us3l3s5}",
+        content: "Hero{h1j4cked_l1k3_1n_Bl4ck_0ps}",
         data: "case_insensitive",
     }
 
 tags:
-    - medium
+    - hard
     - system
 
 state: visible 

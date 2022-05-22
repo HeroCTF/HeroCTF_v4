@@ -6,7 +6,7 @@ System
 
 ### Description
 
-This is your first real assignemnt. You have to assess the security of one of our developpers systems. He's a very good coder, but not that good at keeping his system safe. Could you report to us any vulnerabilities you find in his system?
+Now that you proved yourself, You have to assess the security of one of their developpers systems. He's a very good coder, but not that good at keeping his system safe. Could you report to us any vulnerabilities you find in his system?
 
 The base credentials are:
 ```
