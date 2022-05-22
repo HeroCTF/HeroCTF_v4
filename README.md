@@ -16,7 +16,7 @@ Github : https://github.com/HeroCTF
 
 # Challenges
 
-**Total :** XX challenges.
+**Total :** 27 challenges.
 
 | Name                                                                | Category      | Author     | Difficulty  | Done |
 |---------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
