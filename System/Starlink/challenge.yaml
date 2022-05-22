@@ -1,0 +1,36 @@
+---
+name: BlackOps
+author: Log_s
+category: System
+description: "You asked a friend to set you up with a few samples of http server in different languages for you to test out. He opened an access to one of his machines. He didn't give you admin access, but maybe there is a way to play a trick on him ;)
+
+The base credentials are:
+```
+user1:password123
+```
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{h1j4cked_l1k3_1n_Bl4ck_0ps}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - system
+
+state: visible 
+version: "0.1"
