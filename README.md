@@ -28,10 +28,11 @@ Github : https://github.com/HeroCTF
 | [Daedalus](Prog/daedalus/)                                          | Prog          | Log\_s     | Hard        |  ✅  |
 | [SmallMistakeBigMistake](Web/SmallMistakeBigMistake/)               | Web           | xanhacks   | Easy        |  ✅  |
 | [$ where backdoor](Web/whereBackdoor/)                              | Web           | Log\_s     | Medium      |  ✅  |
-| [Undercorver #1](System/undercover1/)                              | System        | Log\_s     | Easy        |  ✅  |
-| [Undercorver #2](System/undercover2/)                              | System        | Log\_s     | Medium      |  ✅  |
+| [Undercorver #1](System/undercover1/)                               | System        | Log\_s     | Easy        |  ✅  |
+| [Undercorver #2](System/undercover2/)                               | System        | Log\_s     | Medium      |  ✅  |
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ❌  |
+| [Painting](Steganography/Painting)                                  | Steganography | SoEasY     | Easy        |  ❌  |
 | [Redacted](Steganography/Redacted/)                                 | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
