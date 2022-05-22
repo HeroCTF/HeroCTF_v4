@@ -4,14 +4,15 @@
 
 HeroCTF is an online cybersecurity competition for beginners to advanced players that takes place once a year.
 
-Start : ???<br>
-End : ???
+Start : 27th May at 9PM<br>
+End : 29th May at 11PM
 
 Website : https://www.heroctf.fr/<br>
 Twitter : https://twitter.com/HeroCTF<br>
 Discord : https://discord.gg/mgk9bv7<br>
+Linkedin : https://www.linkedin.com/company/heroctf/<br>
 Ctftime : https://ctftime.org/event/1284<br>
-Github  : https://github.com/HeroCTF
+Github : https://github.com/HeroCTF
 
 # Challenges
 
@@ -34,5 +35,13 @@ Github  : https://github.com/HeroCTF
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
 | [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ❌  |
 | [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Hard        |  ❌  |
-
-
+| [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
+| [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
+| [HeroGuessr #1](Osint/HeroGuessr#1/)                                | Osint         | yarienkiva | Easy        |  ❌  |
+| [HeroGuessr #2](Osint/HeroGuessr#2/)                                | Osint         | yarienkiva | Medium      |  ❌  |
+| [HeroGuessr #3](Osint/HeroGuessr#3/)                                | Osint         | yarienkiva | Hard        |  ❌  |
+| [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
+| [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Easy        |  ❌  |
+| [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
+| [sELF control v2](Reverse/sELF%20control%20v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
+| [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
