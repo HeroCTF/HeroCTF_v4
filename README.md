@@ -51,3 +51,4 @@ Github : https://github.com/HeroCTF
 | [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
 | [sELF control v2](Reverse/sELF%20control%20v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
+| [My Passwords](Forensics/MyPasswords)				      | Forensics     | Worty      | Easy        |  ✅ |
