@@ -12,6 +12,10 @@ An admin leaked a confidential document. Unfortunatly, the juicy part is redacte
 Format : **HeroCTF{flag}**<br>
 Author : **Log_s**
 
+### Files
+
+ - [confidential.pdf](confidential.pdf)
+
 ### Write up
 
 The only piece of information we dispose of for this challenge is a PDF file.

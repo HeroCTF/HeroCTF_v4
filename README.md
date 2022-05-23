@@ -36,6 +36,7 @@ Github : https://github.com/HeroCTF
 | [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ❌  |
 | [Painting](Steganography/Painting)                                  | Steganography | SoEasY     | Easy        |  ❌  |
 | [Redacted](Steganography/Redacted/)                                 | Steganography | Log\_s     | Medium      |  ✅  |
+| [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
 | [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ❌  |

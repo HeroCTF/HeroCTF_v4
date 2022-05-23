@@ -1,0 +1,35 @@
+---
+name: Heist
+author: Log_s
+category: Prog
+description: "This rickroll is hiding something...
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{l3f7_r1gh7_l3f7_r1gh7_1_4m_d1zZy}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - stega
+
+files:
+    - getRickrolled.wav
+
+state: visible 
+version: "0.1"
