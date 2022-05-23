@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-// gcc -fno-stack-protector -Wno-stringop-overflow -masm=intel -o Generator source.c
+// gcc -no-pie -fno-stack-protector -Wno-stringop-overflow -masm=intel -o Generator source.c
 
 // XOR it to have "/bin/sh\x00"
 char random_str[8];
@@ -33,14 +33,10 @@ int main(void){
 	srand(time(NULL));
 	
 	// Creating random string
-	for(int i=0; i < 8; i++){
-		if(i == 7){
-			random_str[i] = '\x00';
-		
-		}else{
-			random_str[i] = (rand() % (126 - 33 + 1)) + 33;
-		}
+	for(int i=0; i < 7; i++){
+		random_str[i] = (rand() % (126 - 33 + 1)) + 33;
 	}
+	random_str[7] = '\x00';
 
 	printf("Random string generated: %s\n", random_str);
 	printf("Are you satisfied by this application ? (yes/no) ");
