@@ -2,10 +2,8 @@
 name: HeroVIP
 author: Worty
 category: Web
-description: "Pre-sales are available for the HeroCTF 5 edition. 
-Unfortunately you saw this too late and there is a 7 days wait in the queue with only 3 days left to order...
-
-It's up to you to figure out how to get past this line...
+description: "Ooof you got your place ! GG ! 
+As this is not secure, there might be others things to find...
 
 Format : **Hero{}**<br>
 Author : **Worty**"
@@ -22,7 +20,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{sql1_0v3r_w3bs0ck3t_1s_fun}",
+        content: "Hero{uns3r14l1z3_sh0uld_n3v3r_b3_trust3d}",
         data: "case_insensitive",
     }
 
