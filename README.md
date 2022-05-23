@@ -29,7 +29,7 @@ Github : https://github.com/HeroCTF
 | [SmallMistakeBigMistake](Web/SmallMistakeBigMistake/)               | Web           | xanhacks   | Easy        |  ✅  |
 | [$ where backdoor](Web/whereBackdoor/)                              | Web           | Log\_s     | Medium      |  ✅  |
 | [BlackCat](Web/BlackCat/)                                           | Web           | Worty      | Medium      |  ✅  |
-| [FlowerCDN](Web/FlowerCDN/)                                         | Web           | Worty      | Medium      |  ✅  |
+| [FlowerCDN](Web/FlowerCDN/)                                         | Web           | Worty      | Hard        |  ✅  |
 | [Undercorver #1](System/undercover1/)                               | System        | Log\_s     | Easy        |  ✅  |
 | [Undercorver #2](System/undercover2/)                               | System        | Log\_s     | Medium      |  ✅  |
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
@@ -51,4 +51,4 @@ Github : https://github.com/HeroCTF
 | [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
 | [sELF control v2](Reverse/sELF%20control%20v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
-| [My Passwords](Forensics/MyPasswords)				      | Forensics     | Worty      | Easy        |  ✅ |
+| [My Passwords](Forensics/MyPasswords)				                        | Forensics     | Worty      | Easy        |  ✅ |
