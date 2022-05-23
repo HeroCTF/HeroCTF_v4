@@ -1,0 +1,34 @@
+---
+name: HeroVIP
+author: Worty
+category: Web
+description: "Pre-sales are available for the HeroCTF 5 edition. 
+Unfortunately you saw this too late and there is a 7 days wait in the queue with only 3 days left to order...
+
+It's up to you to figure out how to get past this line...
+
+Format : **Hero{}**<br>
+Author : **Worty**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{sql1_0v3r_w3bs0ck3t_1s_fun}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - web
+
+state: visible 
+version: "0.1"

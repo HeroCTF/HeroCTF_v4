@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center align-center" style="margin-top: 30%;">
+                    <h1>Welcome to the HeroCTF v5 pre-registration site!</h1>
+                    <p>Please note that inscription are closing on 3 days</p>
+                    <p>Current queue average waiting time: 7 days</p>
+                    <img src="https://www.heroctf.fr/images/logo.png">
+                    <hr/>
+                    <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalInfos">Informations</a>
+                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalRegister">Register</a>
+                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalLogin">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalInfos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Global Informations</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Why pre-sales ?</li>We strongly believe that this will be a better experience for our users, so that we can send all informations (and maybe gifts) to pre-sales register users !
+                            <br/><br/>
+                            <li>How does this work?</li>You just have to register your account and connect to it, then you have to wait in the queue a certain amount of time to access pre-sales form :)
+                        </ul>
+                        <div class="text-center">
+                            You can leave page when you've join and reconnect to your account after, this will work :)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Create an account for pre-sales !</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="aliasReg" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="aliasReg" required>Your alias</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="passwordReg" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="passwordReg" required>Your password</label>
+                    </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                    <input type="button" class="btn btn-primary" value="Register" onclick="register()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Login to access pre-sales !</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="alias" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="alias" required>Your alias</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="password" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="password" required>Your password</label>
+                    </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                    <input type="button" class="btn btn-primary" value="Login" onclick="login()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function register()
+        {
+            let alias = $("#aliasReg").val()
+            let pwd = $("#passwordReg").val()
+            $.ajax({
+                type: "POST",
+                url: "/api/v1/register",
+                dataType: "json",
+                data: {"alias":alias,"pwd":pwd},
+                success: function(data)
+                {
+                    if(data["err"]) alert(data["err"])
+                    else if(data["ok"]){
+                        alert("Your account has been created ! You can now login !") ? "" : location.reload()
+                    }else{
+                        alert("Unknown error, please try again.");
+                    }
+                }
+            })
+        }
+        function login()
+        {
+            let alias = $("#alias").val()
+            let pwd = $("#password").val()
+            $.ajax({
+                type: "POST",
+                url: "/api/v1/login",
+                dataType: "json",
+                data: {"alias":alias,"pwd":pwd},
+                success: function(data)
+                {
+                    if(data["err"]) alert(data["err"])
+                    else if(data["ok"]){
+                        location.reload()
+                    }else{
+                        alert("Unknown error, please try again.");
+                    }
+                }
+            })
+        }
+    </script>
+</html>

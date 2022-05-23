@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST")
     {
         if(strlen($_POST["email"]) <= 1000)
         {
-            $db = new PDO("mysql:host=localhost;dbname=blackcat;charset=UTF8", "root", "");
+            $db = new PDO("mysql:host=blackcatbdd;dbname=blackcat;charset=UTF8", "evilhackerz", "wjKNQJLSP4X3uPL522Q6");
             $query = "INSERT INTO newsletter(`id`,`send_date`,`email`) VALUES (0,'".date('Y-m-d')."','".$_POST["email"]."')";
             if($db->query($query) !== False) echo '{"ok":"You will receive the email for the exact location in 3 days. Thank you."}';
             else echo '{"error":"An error occured, please try again."}';

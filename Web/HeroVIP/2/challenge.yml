@@ -1,0 +1,32 @@
+---
+name: HeroVIP
+author: Worty
+category: Web
+description: "Ooof you got your place ! GG ! 
+As this is not secure, there might be others things to find...
+
+Format : **Hero{}**<br>
+Author : **Worty**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{uns3r14l1z3_sh0uld_n3v3r_b3_trust3d}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - web
+
+state: visible 
+version: "0.1"
