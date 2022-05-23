@@ -2,7 +2,7 @@
 name: BlackOps
 author: Log_s
 category: System
-description: "You asked a friend to set you up with a few samples of http server in different languages for you to test out. He opened an access to one of his machines. He didn't give you admin access, but maybe there is a way to play a trick on him ;)
+description: "Here is your chance to take a look at one of starlinks internal systems. This server hosts the tool used by Elon Musks engineers to clone various websites. We've heard both the v1 and the v2 are flawed. Can you find and exploit the problems ?
 
 The base credentials are:
 ```
@@ -24,7 +24,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{h1j4cked_l1k3_1n_Bl4ck_0ps}",
+        content: "Hero{SymL1nk5_4r3_tr1cky}",
         data: "case_insensitive",
     }
 

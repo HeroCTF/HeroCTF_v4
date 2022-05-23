@@ -1,5 +1,10 @@
 #! /usr/bin/python3
 
+######################################################################################
+# Ok you got so far.                                                                 #
+# But I won't do the same mistake twice. Try reading files when I'm not ziping them. #
+######################################################################################
+
 import subprocess, sys, string, os, shutil
 from zipfile import ZipFile
 from os.path import basename
@@ -27,7 +32,7 @@ def check_url(url):
 if check_url(url):
     name = basename(url)
     # Clone the site
-    p1 = subprocess.Popen(['wget', '--no-if-modified-since','-P', DIR, url])
+    p1 = subprocess.Popen(['wget', '-r', '-l', 'inf', '--no-remove-listing', '-P', DIR, url])
     p1.wait()
 else:
     print('[!] Invalid URL')

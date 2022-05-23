@@ -29,13 +29,14 @@ RUN mkdir /home/zip
 RUN chown root:zip /home/zip
 RUN chmod 775 /home/zip
 RUN chmod 777 /tmp
+RUN chmod 750 /home/user2
 COPY clone1.py /home/user1/clone1.py
 COPY clone2.py /home/user2/clone2.py
 RUN echo "user1 ALL=(user2) NOPASSWD:/home/user1/clone1.py" >> /etc/sudoers
 RUN echo "user2 ALL=(root) NOPASSWD:/home/user2/clone2.py" >> /etc/sudoers
 
 # Write flag
-RUN echo "Hero{F4k3_fl4g}" > /root/flag.txt
+RUN echo "Hero{SymL1nk5_4r3_tr1cky}" > /root/flag.txt
 
 # Copy starup file to container and run it
 COPY start.sh /root/start.sh
