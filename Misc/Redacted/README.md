@@ -2,7 +2,7 @@
 
 ### Category
 
-Steganograpy
+Misc
 
 ### Description
 An admin leaked a confidential document. Unfortunatly, the juicy part is redacted... But that won't stop you, will it ?

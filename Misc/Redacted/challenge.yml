@@ -1,7 +1,7 @@
 ---
 name: Redacted
 author: Log_s
-category: Steganography
+category: Misc
 description: "An admin leaked a confidential document. Unfortunatly, the juicy part is redacted... But that won't stop you, will it ?
 
 <b>/!\ The flag format is different from the other flags !</b>
@@ -27,7 +27,7 @@ flags:
 
 tags:
     - medium
-    - stega
+    - misc
 
 files:
     - confidential.pdf

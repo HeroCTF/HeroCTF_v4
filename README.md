@@ -21,6 +21,8 @@ Github : https://github.com/HeroCTF
 | Name                                                                | Category      | Author     | Difficulty  | Done |
 |---------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
 | [Welcome](Misc/welcome/)                                            | Misc          | Log\_s     | Easy        |  ✅  |
+| [Painting](Misc/Painting)                                           | Misc          | SoEasY     | Easy        |  ❌  |
+| [Redacted](Misc/Redacted/)                                          | Misc          | Log\_s     | Medium      |  ✅  |
 | [Heist](Prog/heist/)                                                | Prog          | Log\_s     | Easy        |  ✅  |
 | [Pixel Poney](Prog/pixel_poney/)                                    | Prog          | Log\_s     | Easy        |  ✅  |
 | [Overload](Prog/Overload/)                                          | Prog          | xanhacks   | Easy        |  ✅  |
@@ -34,8 +36,6 @@ Github : https://github.com/HeroCTF
 | [Undercorver #2](System/undercover2/)                               | System        | Log\_s     | Medium      |  ✅  |
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ❌  |
-| [Painting](Steganography/Painting)                                  | Steganography | SoEasY     | Easy        |  ❌  |
-| [Redacted](Steganography/Redacted/)                                 | Steganography | Log\_s     | Medium      |  ✅  |
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
