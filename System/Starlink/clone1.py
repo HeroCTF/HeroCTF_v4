@@ -26,7 +26,7 @@ def check_url(url):
 if check_url(url):
     name = basename(url)
     # Clone the site
-    p1 = subprocess.Popen(['wget', '-nc', '-r', '-l', 'inf', '--no-remove-listing', '-P', '/tmp', url])
+    p1 = subprocess.Popen(['wget', '-nc', '-r', '-l', 'inf', '--no-remove-listing', '-q', '-P', '/tmp', url])
     p1.wait()
     # Create a zip file
     with ZipFile(f'/tmp/{name}.zip', 'w') as zipObj:

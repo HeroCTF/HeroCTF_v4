@@ -35,7 +35,7 @@ Github : https://github.com/HeroCTF
 | [Undercorver #1](System/undercover1/)                               | System        | Log\_s     | Easy        |  ✅  |
 | [Undercorver #2](System/undercover2/)                               | System        | Log\_s     | Medium      |  ✅  |
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
-| [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ❌  |
+| [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |

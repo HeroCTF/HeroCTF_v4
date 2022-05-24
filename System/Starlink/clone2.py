@@ -32,7 +32,7 @@ def check_url(url):
 if check_url(url):
     name = basename(url)
     # Clone the site
-    p1 = subprocess.Popen(['wget', '-r', '-l', 'inf', '--no-remove-listing', '-P', DIR, url])
+    p1 = subprocess.Popen(['wget', '-r', '-l', 'inf', '--no-remove-listing', '-q', '-P', DIR, url])
     p1.wait()
 else:
     print('[!] Invalid URL')
