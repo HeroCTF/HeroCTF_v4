@@ -1,7 +1,8 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # Install dependecies
-RUN apt update && apt install openssh-server sudo openssh-client gcc psmisc nodejs patchelf vim -y
+RUN apt-get update && \
+    apt-get install -y openssh-server sudo openssh-client gcc psmisc nodejs patchelf vim
 
 # Setup users
 RUN adduser --disabled-password --gecos "" user1
