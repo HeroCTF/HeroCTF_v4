@@ -20,9 +20,7 @@ Hero{W3lcome_  	// twitter
 2_h3r0CTF_v4_ 	// discord
 h4ve_Fun!!!}	// linkedin
 ```
-```
+
 ### Flag
 
-```
-Hero{W3lcome_2_h3r0CTF_v4_h4ve_Fun!!!}
-```
+`Hero{W3lcome_2_h3r0CTF_v4_h4ve_Fun!!!}`
