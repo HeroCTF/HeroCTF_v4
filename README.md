@@ -20,7 +20,6 @@ Github : https://github.com/HeroCTF
 
 | Name                                                                | Category      | Author     | Difficulty  | Done |
 |---------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
-| [Welcome](Misc/welcome/)                                            | Misc          | Log\_s     | Easy        |  ✅  |
 | [Painting](Misc/Painting)                                           | Misc          | SoEasY     | Easy        |  ❌  |
 | [Redacted](Misc/Redacted/)                                          | Misc          | Log\_s     | Medium      |  ✅  |
 | [Heist](Prog/heist/)                                                | Prog          | Log\_s     | Easy        |  ✅  |
@@ -43,13 +42,14 @@ Github : https://github.com/HeroCTF
 | [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Hard        |  ❌  |
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
 | [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
-| [HeroGuessr #1](Osint/HeroGuessr#1/)                                | Osint         | yarienkiva | Easy        |  ❌  |
-| [HeroGuessr #2](Osint/HeroGuessr#2/)                                | Osint         | yarienkiva | Medium      |  ❌  |
-| [HeroGuessr #3](Osint/HeroGuessr#3/)                                | Osint         | yarienkiva | Hard        |  ❌  |
+| [Welcome](OSINT/welcome/)                                           | OSINT         | Log\_s     | Easy        |  ✅  |
+| [HeroGuessr #1](OSINT/HeroGuessr#1/)                                | OSINT         | yarienkiva | Easy        |  ❌  |
+| [HeroGuessr #2](OSINT/HeroGuessr#2/)                                | OSINT         | yarienkiva | Medium      |  ❌  |
+| [HeroGuessr #3](OSINT/HeroGuessr#3/)                                | OSINT         | yarienkiva | Hard        |  ❌  |
 | [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
 | [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Easy        |  ❌  |
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
 | [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
 | [sELF control v2](Reverse/sELF%20control%20v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
-| [My Passwords](Forensics/MyPasswords)				                        | Forensics     | Worty      | Easy        |  ✅ |
+| [My Passwords](Forensics/MyPasswords)				                  | Forensics     | Worty      | Easy        |  ✅ |
