@@ -20,7 +20,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{OMG_I_love_so_much_painting_in_control_flow_graph!!!",
+        content: "Hero{OMG_I_love_so_much_painting_in_control_flow_graph!!!}",
         data: "case_insensitive",
     }
 
