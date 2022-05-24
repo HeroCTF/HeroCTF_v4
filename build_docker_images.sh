@@ -14,3 +14,4 @@ function build() {
 # Image tag supports only lowercase letters
 build "./Prog/SSHs" "sshs:latest"
 build "./System/BlackOps" "blackops:latest"
+build "./System/Starlink" "starlink:latest"
