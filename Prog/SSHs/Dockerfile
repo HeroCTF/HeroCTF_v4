@@ -1,7 +1,8 @@
 
-FROM ubuntu:21.10
+FROM ubuntu:20.04
 
-RUN apt update && apt install openssh-server gcc g++ python3 sudo -y
+RUN apt-get update && \
+    apt-get install -y openssh-server gcc g++ python3 sudo
 
 # Copy setup file and run it
 COPY flag.txt /root

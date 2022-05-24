@@ -1,7 +1,10 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
+
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Install dependecies
-RUN apt update && apt install openssh-server openssh-client vim python3 python3-pip sudo wget unzip -y
+RUN apt-get update && \
+    apt-get -y install openssh-server openssh-client vim python3 python3-pip sudo wget unzip
 
 # Setup users
 RUN adduser --disabled-password --gecos "" user1

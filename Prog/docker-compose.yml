@@ -10,3 +10,11 @@ services:
       - LISTEN_PORT=7000
     ports:
       - "7000:7000"
+
+  heist:
+    build:
+      context: ./heist/
+    environment:
+      - LISTEN_PORT=7001
+    ports:
+      - "7001:7001"

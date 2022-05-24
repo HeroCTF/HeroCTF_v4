@@ -1,20 +1,20 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-RUN apt-get update
-RUN apt-get install -y socat
-RUN apt-get install -y python3
+WORKDIR /heist/
 
-RUN mkdir /heist
+RUN apt-get update && \
+    apt-get install -y socat python3
+
 COPY ./chall.py /heist/
 COPY ./entry.sh /heist/
 COPY ./flag.txt /heist/
 
-RUN groupadd ctf
-RUN useradd -G ctf --home=/heist player
-RUN chown player:player /heist/chall.py
+RUN groupadd ctf && \
+    useradd -G ctf --home=/heist player && \
+    chown player:player /heist/chall.py
 
-RUN chmod 4755 /heist/chall.py
-RUN chmod 4755 /heist/entry.sh
+RUN chmod 4755 /heist/chall.py && \
+    chmod 4755 /heist/entry.sh
 
 EXPOSE 7001
 ENTRYPOINT ["/heist/entry.sh"]
