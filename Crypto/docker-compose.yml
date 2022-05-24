@@ -1,0 +1,12 @@
+---
+version: "3.9"
+
+services:
+
+  oracle:
+    build:
+      context: ./Oracles_apprentice/
+    environment:
+      - LISTEN_PORT=9000
+    ports:
+      - "9000:9000"

@@ -2,5 +2,5 @@
 
 while :
 do
-    su -c "exec socat TCP-LISTEN:9001,reuseaddr,fork EXEC:'/app/chall.py,stderr'" - user;
+    su -c "exec socat TCP-LISTEN:${LISTEN_PORT},reuseaddr,fork EXEC:'/app/chall.py,stderr'" - user;
 done

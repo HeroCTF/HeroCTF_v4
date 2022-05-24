@@ -14,5 +14,5 @@ RUN chown user:user /app/chall.py
 RUN chmod 4755 /app/chall.py
 RUN chmod 4755 /app/entry.sh
 
-EXPOSE 9001
+EXPOSE 9000
 ENTRYPOINT ["/app/entry.sh"]
