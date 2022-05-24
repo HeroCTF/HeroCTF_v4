@@ -26,7 +26,7 @@ Github : https://github.com/HeroCTF
 | [Pixel Poney](Prog/pixel_poney/)                                    | Prog          | Log\_s     | Easy        |  ✅  |
 | [Overload](Prog/Overload/)                                          | Prog          | xanhacks   | Easy        |  ✅  |
 | [SSHs](Prog/SSHs/)                                                  | Prog          | Log\_s     | Medium      |  ✅  |
-| [Daedalus](Prog/daedalus/)                                          | Prog          | Log\_s     | Hard        |  ✅  |
+| [Deadalus](Prog/deadalus/)                                          | Prog          | Log\_s     | Hard        |  ✅  |
 | [SmallMistakeBigMistake](Web/SmallMistakeBigMistake/)               | Web           | xanhacks   | Easy        |  ✅  |
 | [$ where backdoor](Web/whereBackdoor/)                              | Web           | Log\_s     | Medium      |  ✅  |
 | [BlackCat](Web/BlackCat/)                                           | Web           | Worty      | Medium      |  ✅  |

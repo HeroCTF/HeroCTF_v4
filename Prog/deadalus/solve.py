@@ -1,5 +1,6 @@
+#!/usr/bin/env python3.10
 from copy import deepcopy
-from pwn import *
+# from pwn import *
 
 
 

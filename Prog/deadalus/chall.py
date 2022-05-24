@@ -1,4 +1,4 @@
-#! /usr/bin/python3.10
+#!/usr/bin/env python3.10
 import os
 from secrets import choice, randbelow
 from solve import count_loops

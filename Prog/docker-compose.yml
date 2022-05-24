@@ -1,0 +1,12 @@
+---
+version: "3.9"
+
+services:
+
+  deadalus:
+    build:
+      context: ./deadalus/
+    environment:
+      - LISTEN_PORT=7000
+    ports:
+      - "7000:7000"
