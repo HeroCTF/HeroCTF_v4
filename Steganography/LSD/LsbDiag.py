@@ -67,22 +67,28 @@ def encode(src, data):
 
 def decode(src):
     print("[-] Decoding... ")
+    
     extracted_bin = ""
     img = Image.open(src, 'r')
+    if img.mode == 'RGB':
+        mode = 3
+        print("[-] RGB mode")
+    elif img.mode == 'RGBA':
+        mode = 4
+        print("[-] RGBA mode")
     width, height = img.size
     print("[-] Image size: {}x{}".format(width, height))
     for i in range(0, width):
         pixel = list(img.getpixel((i, i)))
-        for n in range(0,3):
+        for n in range(0,mode):
             extracted_bin = extracted_bin + str((pixel[n]&1))
     print("[-] Message extracted in binary: {}".format(extracted_bin))
     print("[-] Message extracted in string: " + binaryToString(extracted_bin))
 
-createWhitePictureWithPIL(100,100)
 print("##########################################################")
 print("######################## ENCODING ########################")
 print("##########################################################")
-encode('whiteDefault.png', 'Hero{L5B_D14G_0R1G1N4L_N0P_?}')
+encode('LSD.png', "Well done champ, you're starting to touch some real steganography. Glad you didn't just throw a random script. Here is your flag: Hero{L5B_D14G_0R1G1N4L_N0P_?}")
 print("")
 
 print("##########################################################")

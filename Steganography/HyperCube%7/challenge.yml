@@ -1,0 +1,46 @@
+---
+name: Hypercube %7
+author: Thib
+category: Steganography
+description: "IEEE 5529581
+
+Hints : 
+Modulo 7
+
+n = 3
+
+Flag Height : 100
+
+Flag Width : 100
+
+To pass from a pixel to a decimal number: It is necessary to make a conversion of the greyscale value of the pixel of a base 2n+1 to a base 10.\n
+
+Format : **Hero{}**<br>
+Author : **Thib**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{3xpl01ting_M0d1fic4tion_D1r3ct10n_C00L?}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - stega
+
+files:
+    - vannesGrey.png
+
+state: visible 
+version: "0.1"

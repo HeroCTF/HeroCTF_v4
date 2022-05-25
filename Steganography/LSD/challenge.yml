@@ -1,11 +1,11 @@
 ---
-name: GitRickRolledInSuround
-author: Log_s
+name: LSD
+author: Thib
 category: Steganography
-description: "This rickroll is hiding something...
+description: "Don't try to throw random tools at this poor image. Go back to the basics and learn the detection techniques.
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+Format : **Hero{}**<br>
+Author : **Thib**"
 
 value: null
 type: dynamic
@@ -20,7 +20,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{l3f7_r1gh7_l3f7_r1gh7_1_4m_d1zZy}",
+        content: "Hero{L5B_D14G_0R1G1N4L_N0P_?}",
         data: "case_insensitive",
     }
 
@@ -29,7 +29,7 @@ tags:
     - stega
 
 files:
-    - getRickrolled.wav
+    - secret.png
 
 state: visible 
 version: "0.1"
