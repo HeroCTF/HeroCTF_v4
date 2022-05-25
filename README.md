@@ -36,10 +36,10 @@ Github : https://github.com/HeroCTF
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
-| [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ❌  |
-| [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ❌  |
-| [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ❌  |
-| [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Hard        |  ❌  |
+| [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ✅  |
+| [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ✅  |
+| [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ✅  |
+| [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Medium      |  ✅  |
 | [Poly123](Crypto/Poly123/)                                          | Crypto        | xanhacks   | Easy        |  ✅  |
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
 | [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
