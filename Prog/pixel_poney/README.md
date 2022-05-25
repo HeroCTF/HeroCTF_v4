@@ -5,7 +5,7 @@
 Prog
 
 ### Description
-I'm not in a mood of writing riddle as an explanation for this challenge, so I'm gonna be straight with you. Those numbers in the input file represent pixel, and the image you seek has a width of 3500 pixels. See ya
+I'm not in a mood of writing riddles as an explanation for this challenge, so I'm gonna be straight with you. Those numbers in the input file represent pixels, and the image you seek has a width of 3500 pixels. See ya
 
 Format : **Hero{flag}**<br>
 Author : **Log_s**
