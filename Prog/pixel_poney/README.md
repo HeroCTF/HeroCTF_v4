@@ -10,6 +10,10 @@ I'm not in a mood of writing riddles as an explanation for this challenge, so I'
 Format : **Hero{flag}**<br>
 Author : **Log_s**
 
+### Files
+
+ - [input.txt](input.txt)
+
 ### Write up
 
 Ok, so we know we have to reconstruct an image, and that its size is 3500x????.
