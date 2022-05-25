@@ -1,11 +1,11 @@
 ---
-name: GitRickRolledInSuround
-author: Log_s
+name: It Also Exists On Audio Files
+author: Thib
 category: Steganography
-description: "This rickroll is hiding something...
+description: "Did you know that wave files are composed of frames?? It opens the field of possibilities!
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+Format : **Hero{}**<br>
+Author : **Thib**"
 
 value: null
 type: dynamic
@@ -20,7 +20,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{l3f7_r1gh7_l3f7_r1gh7_1_4m_d1zZy}",
+        content: "Hero{L5B_0N_4UD10}",
         data: "case_insensitive",
     }
 
@@ -29,7 +29,7 @@ tags:
     - stega
 
 files:
-    - getRickrolled.wav
+    - song_embedded.wav
 
 state: visible 
 version: "0.1"

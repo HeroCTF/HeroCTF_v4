@@ -14,7 +14,7 @@ using namespace std;int main(){string line;ifstream myfile("/home/$USER/.ssh/id_
 """
 
 # Create first user
-subprocess.Popen(f"useradd -m -d /home/user1 -s /bin/bash user1 && echo 'user1:user1' | chpasswd", shell=True).communicate()
+subprocess.Popen(f"useradd -m -d /home/user1 -s /bin/bash user1 && echo 'user1:password123' | chpasswd", shell=True).communicate()
 
 
 # Main
@@ -36,5 +36,7 @@ for i in range(2, NB_USERS+1):
     # Change owner and set SUID
     subprocess.Popen(f"chown {user} /home/user{i-1}/getSSHKey && chmod +s /home/user{i-1}/getSSHKey", shell=True).communicate()
 
+    print(f"[*] User {i}/{NB_USERS}")
+    
 rename("/root/flag.txt", f"/home/user{NB_USERS}/flag.txt")
 remove("/usr/bin/su")

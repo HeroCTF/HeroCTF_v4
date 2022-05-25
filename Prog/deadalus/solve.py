@@ -1,11 +1,10 @@
 #!/usr/bin/env python3.10
 from copy import deepcopy
-# from pwn import *
-
+# from pwn import * # Uncomment this to run solve
 
 
 host = "localhost"
-port = 7002
+port = 7000
 
 
 
@@ -98,7 +97,6 @@ def count_loops(grid):
 
 def get_grid(socket):
     data = socket.recvuntil(b"Answer >> ").decode()
-    print(data)
     grid_raw = data.split("===")[2].split("Answer >> ")[0].strip()
     lines = grid_raw.split("\n")
     grid = []
@@ -110,8 +108,9 @@ def get_grid(socket):
 if __name__ == "__main__":
     r = remote(host, port)
 
-    for i in range(6):
+    for i in range(16):
         grid = get_grid(r)
         nb_loops = str(count_loops(grid))
         r.sendline(nb_loops.encode())
-        print(nb_loops)
+    
+    print(r.recvall().decode())

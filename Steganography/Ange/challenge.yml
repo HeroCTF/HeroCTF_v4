@@ -1,11 +1,11 @@
 ---
-name: GitRickRolledInSuround
-author: Log_s
+name: Ange
+author: Thib
 category: Steganography
-description: "This rickroll is hiding something...
+description: "Everything is in the title!
 
 Format : **Hero{flag}**<br>
-Author : **Log_s**"
+Author : **Thib**"
 
 value: null
 type: dynamic
@@ -20,7 +20,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{l3f7_r1gh7_l3f7_r1gh7_1_4m_d1zZy}",
+        content: "Hero{4NG3_4L83R71N1}",
         data: "case_insensitive",
     }
 
@@ -29,7 +29,7 @@ tags:
     - stega
 
 files:
-    - getRickrolled.wav
+    - redactedFinal.png
 
 state: visible 
 version: "0.1"
