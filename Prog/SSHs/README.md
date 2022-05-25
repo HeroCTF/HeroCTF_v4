@@ -9,6 +9,11 @@ Prog
 Every user can read the private rsa key of the next user. You just have to grab it, and ssh as the next. But... there are 250 ?!?<br>
 Let's automate it ! (The last user has a *flag.txt* at the root of his home directory)
 
+The base credentials are:
+```
+user1:password123
+```
+
 ```
 Host : xxxx.heroctf.fr
 Port : xxxx

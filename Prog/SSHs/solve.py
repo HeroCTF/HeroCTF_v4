@@ -6,7 +6,7 @@ port = 22
 
 #Connect to machine
 print("[*] Connect to gateway ssh account\n")
-gateway = SSHSession(host, "user1", port=22, password="user1")
+gateway = SSHSession(host, "user1", port=2022, password="password123")
 
 # Keep track of sessions
 active_session = gateway
