@@ -51,5 +51,6 @@ Github : https://github.com/HeroCTF
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
 | [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
 | [sELF control v2](Reverse/sELF%20control%20v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
+| [Resolver](Reverse/Resolver/)                                       | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
 | [My Passwords](Forensics/MyPasswords)				                  | Forensics     | Worty      | Easy        |  ✅ |

@@ -1,0 +1,43 @@
+---
+name: Resolver
+author: SoEasY
+category: Reverse
+description: "
+You are trying to get into a malware development forum and an administrator gives you this challenge to solve to get in.
+
+According to him, this function is used for dynamic resolving.
+He wants you to give him the values to pass as parameters to resolve the following functions:
+- GetDateFormatWWorker (val1)
+- IsWow64GuestMachineSupported (val2)
+- SetThreadPreferredUILanguages (val3)
+
+
+Format : **Hero{0xval1:0xval2:0xval3}**<br>
+Author : **SoEasY**
+"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{0xe3232703:0x89291c8b:0xac881638}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - reverse
+
+files:
+    - Resolver.png
+
+state: visible 
+version: "0.1"
