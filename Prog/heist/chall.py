@@ -30,6 +30,7 @@ BANK = account(100, "Bank")
 
 # Main loop
 menu = "dashboard"
+clear()
 while menu != "quit":
     if menu == "dashboard":
         print("=== Dashboard ===")
