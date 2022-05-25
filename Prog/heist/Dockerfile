@@ -16,7 +16,6 @@ RUN groupadd ctf && \
 RUN chmod 4755 /heist/chall.py && \
     chmod 4755 /heist/entry.sh
 
-ENV LISTEN_PORT 7001
 ENV TERM xterm
 
 EXPOSE ${LISTEN_PORT}
