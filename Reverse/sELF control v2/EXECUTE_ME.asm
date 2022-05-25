@@ -47,8 +47,8 @@ _part2:
                 dd      filesize                ;   p_memsz
                 db      7                       ;   p_flags
                 ; ========== HERE ==========
-_part3:         db 0xC1, 0x03, 0x11             ; -->  rol DWORD [ebx], 17
-                ror     DWORD [ebx+4], 0xFF     ; p_align
+_part3:         rol     DWORD [ebx], 11         ; -->  rol DWORD [ebx], 0x11
+                ror     DWORD [ebx+4], 15       ; p_align
 
 phdrsize        equ     $ - phdr
                 int     0x80

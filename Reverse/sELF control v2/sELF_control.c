@@ -3,7 +3,7 @@
 #include <uuid/uuid.h>
 #include <unistd.h>
 
-#define NB_PATCHES 3
+#define NB_PATCHES 4
 
 // gcc -o sELF_control sELF_control.c -luuid
 
@@ -22,7 +22,7 @@ int main(){
 			"██╔══██║██╔══╝  ██╔══██╗██║   ██║██║        ██║   ██╔══╝  \n"
 			"██║  ██║███████╗██║  ██║╚██████╔╝╚██████╗   ██║   ██║     \n"
 			"╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝   ╚═╝   ╚═╝     \n");
-	printf("================ sELF control (by SoEasY) ================\n\n");
+	printf("=============== sELF control v2 (by SoEasY) ===============\n\n");
 	fflush(stdout);
 
 	uuid = (char*) malloc(37);
@@ -51,11 +51,14 @@ int main(){
 			printf("[-] Impossible to open the temporary file.\n");
 			return 1;
 		}
-	
-		printf("\nPosition of the byte to patch in hex (example: %02X) : ", rand() % 32);
+		
+		printf("\n[+] Patch n°%d/%d\n", i+1, NB_PATCHES);
+
+		printf("- Offset of the byte to patch in hex (example: %02X) : ", rand() % 32);
 		fflush(stdout);
 		scanf("%lx", &offset);
-		printf("Value to put at this offset in hex (example: %02X) : ", rand() % 32);
+
+		printf("- Value to put at this offset in hex (example: %02X) : ", rand() % 32);
 		fflush(stdout);
 		scanf("%x", &value);
 
@@ -65,9 +68,11 @@ int main(){
 		fclose(copy);
 	}
 
-	// printf("\n[+] ELF header : \n");
-	// sprintf(xxd, "xxd %s | head\0", uuid);
-	// system(xxd);
+	/*
+	printf("\n[+] ELF header : \n");
+	sprintf(xxd, "xxd %s | head\x00", uuid);
+	system(xxd);
+	*/
 
 	printf("\n[+] Execution : \n");
 	fflush(stdout);
