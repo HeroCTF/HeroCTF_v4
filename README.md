@@ -40,7 +40,7 @@ Github : https://github.com/HeroCTF
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ✅  |
 | [HyperCube%7](Steganography/HyperCube7/)                           | Steganography | Thibz      | Hard        |  ✅  |
 | [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Medium      |  ✅  |
-| [Poly123](Crypto/Poly123/)                                          | Crypto        | xanhacks   | Easy        |  ✅  |
+| [Poly321](Crypto/Poly321/)                                          | Crypto        | xanhacks   | Easy        |  ✅  |
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
 | [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
 | [Welcome](OSINT/welcome/)                                           | OSINT         | Log\_s     | Easy        |  ✅  |
