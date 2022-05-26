@@ -38,16 +38,16 @@ Github : https://github.com/HeroCTF
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ✅  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ✅  |
-| [HyperCube%7](Steganography/HyperCube7/)                           | Steganography | Thibz      | Hard        |  ✅  |
+| [HyperCube%7](Steganography/HyperCube7/)                            | Steganography | Thibz      | Hard        |  ✅  |
 | [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Medium      |  ✅  |
 | [Poly321](Crypto/Poly321/)                                          | Crypto        | xanhacks   | Easy        |  ✅  |
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
 | [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
 | [Welcome](OSINT/welcome/)                                           | OSINT         | Log\_s     | Easy        |  ✅  |
-| [HeroGuessr #1](OSINT/HeroGuessr#1/)                               | OSINT         | yarienkiva | Easy        |  ❌  |
-| [HeroGuessr #2](OSINT/HeroGuessr#2/)                              | OSINT         | yarienkiva | Hard        |  ❌  |
-| [Stickerz#1](OSINT/Stickerz#1/) | OSINT | yarienkiva | Easy | ✅ |
-| [Stickerz#2](OSINT/Stickerz#2/) | OSINT | yarienkiva | Medium | ✅ |
+| [HeroGuessr #1](OSINT/HeroGuessr#1/)                                | OSINT         | yarienkiva | Easy        |  ❌  |
+| [HeroGuessr #2](OSINT/HeroGuessr#2/)                                | OSINT         | yarienkiva | Hard        |  ❌  |
+| [Stickerz#1](OSINT/Stickerz1/)                                     | OSINT         | yarienkiva | Easy        |  ✅  |
+| [Stickerz#2](OSINT/Stickerz2/)                                     | OSINT         | yarienkiva | Medium      |  ✅  |
 | [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
 | [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Medium      |  ❌  |
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
@@ -55,4 +55,4 @@ Github : https://github.com/HeroCTF
 | [sELF control v2](Reverse/sELF%20control%20v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Resolver](Reverse/Resolver/)                                       | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
-| [My Passwords](Forensics/MyPasswords)				                  | Forensics     | Worty      | Easy        |  ✅ |
+| [My Passwords](Forensics/MyPasswords)				                  | Forensics     | Worty      | Easy        |  ✅  |
