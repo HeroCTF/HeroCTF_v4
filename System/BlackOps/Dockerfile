@@ -12,10 +12,10 @@ RUN ln -sf /dev/null /home/user1/.bash_history
 # Setup Vulns
 COPY servers /home/user1/servers
 COPY *.c /tmp/
-RUN gcc -s -c /tmp/genports.c -fpic -o /tmp/genports.o
-RUN gcc -s -shared -o /tmp/libgenports.so /tmp/genports.o
+RUN gcc -s -c /tmp/genprocs.c -fpic -o /tmp/genprocs.o
+RUN gcc -s -shared -o /tmp/libgenprocs.so /tmp/genprocs.o
 RUN gcc -s -c /tmp/kc.c -o /tmp/kc.o
-RUN gcc -s -o /tmp/kc /tmp/kc.o -L/tmp -lgenports
+RUN gcc -s -o /tmp/kc /tmp/kc.o -L/tmp -lgenprocs
 RUN gcc -s /tmp/main.c -o /tmp/restart_servers
 RUN rm /tmp/*.c /tmp/*.o
 RUN mkdir /home/user1/servers/utils/
@@ -23,7 +23,7 @@ RUN mv /tmp/restart_servers /home/user1/servers/utils/restart_servers
 RUN cp /bin/rm /home/user1/servers/rm
 RUN chmod +s /home/user1/servers/utils/restart_servers /home/user1/servers/rm
 RUN mv /tmp/kc /bin/
-RUN mv /tmp/libgenports.so /home/user1/servers/libs/libgenports.so
+RUN mv /tmp/libgenprocs.so /home/user1/servers/libs/libgenprocs.so
 RUN echo "/home/user1/servers/libs/\n/home/user1/" > /etc/ld.so.conf.d/servers.conf
 RUN chmod +x /home/user1/servers/src/*
 RUN /home/user1/servers/utils/restart_servers

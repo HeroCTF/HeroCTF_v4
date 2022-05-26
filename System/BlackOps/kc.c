@@ -4,22 +4,19 @@
 
 int main(void)
 {
-    int ports[3];
-    genports(ports);
+    const char *procs[3];
+    genprocs(procs);
 
-    int nb_ports = sizeof(ports)/sizeof(ports[0]);
-    for (int i = 0 ; i < nb_ports ; i++) {
+    int nb_procs = sizeof(procs)/sizeof(procs[0]);
+    for (int i = 0 ; i < nb_procs ; i++) {
         
-        char *arg1 = (char*)malloc(5 * sizeof(char));
-        sprintf(arg1, "%d/tcp", ports[i]);
-
-        char *arg2 = "-k";
+        char *arg1 = procs[i];
         
-        printf("\t[*] Killing port %d\n", ports[i]);
+        printf("\t[*] Killing server %s\n", procs[i]);
         
         int pid = fork();
         if(pid == 0) {
-            execl("/bin/fuser", "/bin/fuser", arg1, arg2, NULL);
+            execl("/usr/bin/pkill", "/usr/bin/pkill", arg1, NULL);
         }
         else if (pid > 0) {
             int status;
