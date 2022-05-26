@@ -8,12 +8,12 @@ Steganography
 
 Everyting is in the title !
 
-Format : Hero{}<br>
-Author : Thib
+Format : **Hero{}**<br>
+Author : **Thib**
 
 ### Files
 
-- redactedFinal.png
+- [redactedFinal.png](redactedFinal.png)
 
 ### Write up
 
@@ -31,4 +31,6 @@ Then in the upper left corner there is the flag. We can use Stegsolve or aperiso
 
 ### Flag
 
+```
 Hero{4NG3_4L83R71N1}
+```
