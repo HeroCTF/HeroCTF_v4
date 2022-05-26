@@ -1,10 +1,11 @@
 FROM ubuntu:21.10
 
+WORKDIR /Generator/
+
 RUN apt-get update 
 RUN apt-get install -y socat
 RUN groupadd ctf
 
-RUN mkdir /Generator
 COPY ./Generator /Generator/
 COPY ./entry.sh /Generator/
 COPY ./flag.txt /Generator/
