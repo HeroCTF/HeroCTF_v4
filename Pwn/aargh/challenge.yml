@@ -34,7 +34,7 @@ tags:
     - pwn
 
 files:
-    - aargh
+    - aargh_REDACTED
 
 state: visible 
 version: "0.1"
