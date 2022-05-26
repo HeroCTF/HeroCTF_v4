@@ -44,9 +44,10 @@ Github : https://github.com/HeroCTF
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
 | [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
 | [Welcome](OSINT/welcome/)                                           | OSINT         | Log\_s     | Easy        |  ✅  |
-| [HeroGuessr #1](OSINT/HeroGuessr#1/)                                | OSINT         | yarienkiva | Easy        |  ❌  |
-| [HeroGuessr #2](OSINT/HeroGuessr#2/)                                | OSINT         | yarienkiva | Medium      |  ❌  |
-| [HeroGuessr #3](OSINT/HeroGuessr#3/)                                | OSINT         | yarienkiva | Hard        |  ❌  |
+| [HeroGuessr #1](OSINT/HeroGuessr#1/)                               | OSINT         | yarienkiva | Easy        |  ❌  |
+| [HeroGuessr #2](OSINT/HeroGuessr#2/)                              | OSINT         | yarienkiva | Hard        |  ❌  |
+| [Stickerz#1](OSINT/Stickerz#1/) | OSINT | yarienkiva | Easy | ✅ |
+| [Stickerz#2](OSINT/Stickerz#2/) | OSINT | yarienkiva | Medium | ✅ |
 | [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
 | [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Medium      |  ❌  |
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |

@@ -1,0 +1,39 @@
+---
+name: Stickerz#1
+author: Alol
+category: osint
+description: "Snapped this photo while out for a walk at night. Next to the market there's a theater. Can you find its name ?
+
+Format : **Hero{Theater's name as written on Google Maps}**<br>
+Author : **Alol**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Monfort Théâtre}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{Le Monfort}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - osint
+
+files:
+    - stickerz1.jpg
+
+state: visible 
+version: "0.1"

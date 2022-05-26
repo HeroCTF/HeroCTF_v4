@@ -1,0 +1,44 @@
+---
+name: Stickerz#2
+author: Alol
+category: osint
+description: "Don't you love the seaside ? I didn't realize it at first but I put a HeroCTF sticker just above the painting of a famous artist. Can you find the painting's name ?
+
+Format : **Hero{Painting's name as written on Google Maps}**<br>
+Author : **Alol**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Banksy ‘Tesco Sandcastles’ Painting}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{Banksy 'Tesco Sandcastles' Painting}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{Tesco Sandcastles}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - osint
+
+files:
+    - stickerz2.jpg
+
+state: visible 
+version: "0.1"
