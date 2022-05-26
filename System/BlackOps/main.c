@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    puts("[*] Cleaning all ports");
+    puts("[*] Cleaning all servers");
 
     setreuid(geteuid(), geteuid());
 
@@ -23,7 +23,7 @@ int main(void)
     else {
         printf("[!] Error while forking");
     }
-    puts("[*] All ports cleaned");
+    puts("[*] All servers cleaned");
 
     puts("[*] Restart services");
 
