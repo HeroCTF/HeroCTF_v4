@@ -1,0 +1,20 @@
+---
+version: "3.9"
+
+services:
+
+  generator:
+    build:
+      context: ./Generator/
+    environment:
+      - LISTEN_PORT=8000
+    ports:
+      - "8000:8000"
+
+  impossible:
+    build:
+      context: ./Impossible/
+    environment:
+      - LISTEN_PORT=8001
+    ports:
+      - "8001:8001"
