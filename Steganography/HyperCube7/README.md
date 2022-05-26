@@ -19,12 +19,12 @@ Flag Width : 100
 
 To pass from a pixel to a decimal number: It is necessary to make a conversion of the greyscale value of the pixel of a base 2n+1 to a base 10
 
-Format : Hero{}<br>
-Author : Thib
+Format : **Hero{}**<br>
+Author : **Thib**
 
 ### Files
 
-- vannes.png
+- [vannes](vannes.png)
 
 ### Write up
 
@@ -90,5 +90,6 @@ func decryption(cover *image.Gray, height int, width int) *image.Gray {
 ```
 
 ### Flag
-
+```
 Hero{3xpl01ting_M0d1fic4tion_D1r3ct10n_C00L?}
+```

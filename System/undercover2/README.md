@@ -10,7 +10,7 @@ Now that you proved yourself, You have to assess the security of one of their de
 
 The base credentials are:
 ```
-user:password123
+user1:password123
 ```
 
 Format : **Hero{flag}**<br>
@@ -100,6 +100,7 @@ root@e3eb9614f8a6:~# cat /root/flag.txt
 Hero{3w-d4ta_1s_n0t_us3l3s5}
 ```
 
+NB: The reason why I didn't run the apache server as root directly for the challenge, is that the apache2 binary itself won't be ran as root. To achieve it anyway, I would have had to recompile a patched apache2 binary.
 
 ### Flag
 

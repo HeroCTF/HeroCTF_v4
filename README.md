@@ -16,7 +16,7 @@ Github : https://github.com/HeroCTF
 
 # Challenges
 
-**Total :** 33 challenges.
+**Total :** 35 challenges.
 
 | Name                                                                | Category      | Author     | Difficulty  | Done |
 |---------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
@@ -38,9 +38,9 @@ Github : https://github.com/HeroCTF
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
 | [Ange](Steganography/Ange/)                                         | Steganography | Thibz      | Medium      |  ✅  |
 | [ItAlsoExistsOnAudioFiles](Steganography/ItAlsoExistsOnAudioFiles/) | Steganography | Thibz      | Medium      |  ✅  |
-| [HyperCube%7](Steganography/HyperCube%7/)                           | Steganography | Thibz      | Hard        |  ✅  |
+| [HyperCube%7](Steganography/HyperCube7/)                           | Steganography | Thibz      | Hard        |  ✅  |
 | [LSD](Steganography/LSD/)                                           | Steganography | Thibz      | Medium      |  ✅  |
-| [Poly123](Crypto/Poly123/)                                          | Crypto        | xanhacks   | Easy        |  ✅  |
+| [Poly321](Crypto/Poly321/)                                          | Crypto        | xanhacks   | Easy        |  ✅  |
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)               | Crypto        | yarienkiva | Easy        |  ✅  |
 | [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                  | Crypto        | yarienkiva | Medium      |  ❌  |
 | [Welcome](OSINT/welcome/)                                           | OSINT         | Log\_s     | Easy        |  ✅  |
