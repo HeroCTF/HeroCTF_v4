@@ -1,0 +1,12 @@
+---
+version: "3.9"
+
+services:
+
+  selfcontrolv2:
+    build:
+      context: ./sELF\ control\ v2/
+    environment:
+      - LISTEN_PORT=9000
+    ports:
+      - "9000:9000"
