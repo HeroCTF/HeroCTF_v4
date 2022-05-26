@@ -7,7 +7,7 @@ function build() {
     image_name=$2
 
     pushd "${PWD}/${path}"
-    sudo docker build . -t "$image_name"
+    docker build . -t "$image_name"
     popd
 }
 
