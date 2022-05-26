@@ -1,10 +1,9 @@
-FROM ubuntu:20.04
+FROM ubuntu:21.10
 
 RUN apt-get update && \
-    apt-get install -y socat software-properties-common gcc
+    apt-get install -y socat
 
-COPY ./Impossible.c /impossible/
-RUN gcc -o /impossible/Impossible /impossible/Impossible.c -lm
+COPY ./Impossible /impossible/
 COPY ./entry.sh /impossible/
 COPY ./flag.txt /impossible/
 
@@ -13,8 +12,9 @@ RUN groupadd ctf && \
     chown player:player /impossible/Impossible
 
 RUN chmod 4755 /impossible/Impossible && \
-    chmod 4755 /impossible/entry.sh
+    chmod 4755 /impossible/entry.sh && \
+	chmod 4755 /impossible/
 
-ENV LISTEN_PORT 7000
 EXPOSE ${LISTEN_PORT}
+
 ENTRYPOINT ["/impossible/entry.sh"]
