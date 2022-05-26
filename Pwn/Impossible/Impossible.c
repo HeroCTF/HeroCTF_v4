@@ -103,7 +103,7 @@ int main(int argc, char* argv[]) {
         printf("[+] Generated phi : %d\n", phi);
         printf("[+] Generated e : %d\n", e);
     #endif
-        
+    
     printf("Enter a value to encrypt: ");
     fflush(stdout);
     fgets(m, 16, stdin);

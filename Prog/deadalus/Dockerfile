@@ -22,5 +22,5 @@ RUN groupadd ctf && \
 RUN chmod 4755 /deadalus/chall.py && \
     chmod 4755 /deadalus/entry.sh
 
-EXPOSE 7000
+EXPOSE ${LISTEN_PORT}
 ENTRYPOINT ["/deadalus/entry.sh"]

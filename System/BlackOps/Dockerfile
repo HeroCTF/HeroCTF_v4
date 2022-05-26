@@ -5,9 +5,9 @@ RUN apt-get update && \
     apt-get install -y openssh-server sudo openssh-client gcc psmisc nodejs patchelf vim
 
 # Setup users
-RUN adduser --disabled-password --gecos "" user1
-RUN echo 'user1:password123' | chpasswd
-RUN ln -sf /dev/null /home/user1/.bash_history
+RUN adduser --disabled-password --gecos "" user1 && \
+    echo 'user1:password123' | chpasswd && \
+    ln -sf /dev/null /home/user1/.bash_history
 
 # Setup Vulns
 COPY servers /home/user1/servers

