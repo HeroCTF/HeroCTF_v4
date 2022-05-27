@@ -12,5 +12,5 @@ WORKDIR /var/www/documentation
 COPY ./documentation/ .
 
 COPY ./000-default.conf /etc/apache2/sites-available/
-
+COPY ./passwords /etc/apache2
 RUN a2enmod rewrite
