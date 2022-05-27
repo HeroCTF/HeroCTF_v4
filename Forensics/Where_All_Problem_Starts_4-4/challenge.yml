@@ -7,6 +7,13 @@ description: "A network administrator has woken up and tells us that he makes ne
 Moreover, the malware seems to have exfiltrated files but we are not sure and the capture seems unreadable... it's up to you to find the exfiltrated files!
 
 /!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
+The memory dump is the same as the challenge 'Where all problems starts 3/4'
+
+- [Download file](https://drive.google.com/file/d/1ub1xrCwLy1pRR86tK5OAJxsdQ4gMsq2Z/view?usp=sharing)
+
+```
+md5sum capture.pcapng : 7ce8c037a2fc93b65fc7e4320633fe6b
+```
 
 Format : Hero{}<br>Author : Worty"
 value: null

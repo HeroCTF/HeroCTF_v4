@@ -3,10 +3,16 @@ name: Where all problems starts 3/4
 author: Worty
 category: Forensics
 description: "The malware was therefore custom and specifically targeted this company, so there is no way to use known databases to identify its different keys...
-
 This malware seems to act like a droper for another ones, but we are not really sure.. could you find some informations to confirm that ?
 
 /!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
+
+- [Download file](https://drive.google.com/file/d/1Y5Szq3GnfmfaMoTubeSTGtokdqeZ7dwm/view?usp=sharing)
+
+```
+md5sum memory.7z : 1e8a55623872470b1b2e65f8434f0ab4
+md5sum memory.dmp : 68375e94aee415c5b3df7aaaf99db59f
+```
 
 Format : Hero{}<br>Author : Worty"
 value: null
