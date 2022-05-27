@@ -36,8 +36,8 @@ Finaly, you can use special gateways in a specific direction only. Here are two 
 ```
 NB: to help you, the first 6 maze parts are always the same, and covering the basics. The next maze parts are random.
 ```
-Host : xxxx.heroctf.fr
-Port : xxxx
+Host : prog.heroctf.fr
+Port : 7000
 ```
 
 Format : **Hero{flag}**<br>

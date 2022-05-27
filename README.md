@@ -33,6 +33,7 @@ Github : https://github.com/HeroCTF
 | [FlowerCDN](Web/FlowerCDN/)                                         | Web           | Worty      | Hard        |  ✅  |
 | [Undercorver #1](System/undercover1/)                               | System        | Log\_s     | Easy        |  ✅  |
 | [Undercorver #2](System/undercover2/)                               | System        | Log\_s     | Medium      |  ✅  |
+| [pyjAil iS Mad](System/pyjAil_iS_Mad/)                              | System        | Log\_s     | Medium      |  ✅  |
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
@@ -52,7 +53,7 @@ Github : https://github.com/HeroCTF
 | [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Medium      |  ❌  |
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
 | [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
-| [sELF control v2](Reverse/sELF_control_v2/)                     | Reverse       | SoEasY     | Medium      |  ❌  |
+| [sELF control v2](Reverse/sELF_control_v2/)                         | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Resolver](Reverse/Resolver/)                                       | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
 | [My Passwords](Forensics/MyPasswords)				                  | Forensics     | Worty      | Easy        |  ✅  |
