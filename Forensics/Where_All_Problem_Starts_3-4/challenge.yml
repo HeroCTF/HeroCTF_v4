@@ -9,6 +9,8 @@ This malware seems to act like a droper for another ones, but we are not really 
 
 - [Download file](https://drive.google.com/file/d/1Y5Szq3GnfmfaMoTubeSTGtokdqeZ7dwm/view?usp=sharing)
 
+Flag format : Hero{ip:port-malware_filename-name_of_another_malicious_file}
+
 ```
 md5sum memory.7z : 1e8a55623872470b1b2e65f8434f0ab4
 md5sum memory.dmp : 68375e94aee415c5b3df7aaaf99db59f
@@ -28,7 +30,7 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{}",
+        content: "Hero{161.97.163.247:80-bc.ps1-VfZF}",
         data: "case_insensitive",
     }
 
