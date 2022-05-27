@@ -75,9 +75,9 @@ We can see that an integer `m` is read on stdin on 16 bytes as a string and will
 .bss:0x4048 e         dd ?
 ```
 
-We can here see that the `m` value is a `char[8]`: if we enter more than 8 bytes in `m`, we will overflow on the `e` which is very interesting because `e` is the exposant in the RSA encryption algorithm !
+We can here see that the `m` value is a `char[8]`: if we enter more than 8 bytes in `m`, we will overflow on the `e` value which is very interesting because `e` is the exponent in the RSA encryption algorithm !
 
-if e = 1, we will have cipher == clear (here `c` == `m`) !
+if `e=1`, we will have cipher == clear !
 So the plan is to have `m=12345` with `e=1` so that `c=12345`.
 
 ```py
