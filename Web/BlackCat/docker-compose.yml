@@ -10,7 +10,7 @@ services:
     restart: always
     container_name: blackcat_bot
 
-   blackcat:
+  blackcat:
     build:
       context: ./appli/
       dockerfile: Dockerfile
