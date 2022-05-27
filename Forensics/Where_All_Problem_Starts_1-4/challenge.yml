@@ -1,0 +1,36 @@
+---
+name: Where all problems starts 1/4
+author: Worty
+category: Forensics
+description: "For a change of pace, a company has been attacked again... 
+
+Nevertheless, the means used here is quite original, indeed, it would be apparently a food delivery man who would be at the origin of the initial compromise...
+
+For your first analysis, you will have to identify the entry point used by the attacker to enter the machine.
+
+/!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
+
+Format : Hero{}<br>Author : Worty"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - forensics
+
+state: visible 
+version: "0.1"
