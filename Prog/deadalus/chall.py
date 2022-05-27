@@ -25,7 +25,6 @@ def generate_grid():
 
 # Get level names
 levels = sorted(os.listdir("levels"))
-print(levels)
 counter = 1
 
 # Print the first levels in order, to help player
