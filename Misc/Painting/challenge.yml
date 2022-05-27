@@ -5,8 +5,8 @@ category: Misc
 description: "Your software engineer sent you this file, making a proud face. 
 Can you find the flag ?
 
-Format : **Hero{flag}**<br>
-Author : **SoEasY**"
+
+Format : Hero{flag}<br>Author : SoEasY"
 value: null
 type: dynamic
 extra:

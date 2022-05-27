@@ -4,12 +4,14 @@ author: Worty
 category: Forensics
 description: "We have exfiltrated data from a malicious person's computer and we need his pastebin password.
 
+
 Unfortunately, the file system dump was damaged, so the only thing we were able to recover is provided to you.
+
 
 Can you recover his password?
 
-Format : **Hero{pastebin_mdp}**<br>
-Author : **Worty**"
+
+Format : Hero{pastebin_mdp}<br>Author : Worty"
 value: null
 type: dynamic
 extra:
