@@ -1,8 +1,13 @@
 ---
 name: pyjAil iS Mad
 author: Log_s
-category: System
-description: "
+category: Misc
+description: "The pyjail isn't designed to pop a shell, or read a file. Just recover the redacted part of the source code.
+
+
+**Host** : misc.heroctf.fr<br>
+**Port** : 6000
+
 
 Format : Hero{flag}<br>Author : Log_s"
 value: null
@@ -23,8 +28,11 @@ flags:
     }
 
 tags:
-    - medium
-    - system
+    - hard
+    - misc
+
+files:
+    - jail_redacted.py
 
 state: visible 
 version: "0.1"
