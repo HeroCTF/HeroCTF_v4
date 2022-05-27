@@ -1,6 +1,6 @@
 from pwn import *
 
-r = remote("127.0.0.1", 8001)
+r = remote("pwn.heroctf.fr", 8001)
 #r = process("./Impossible")
 
 buf = b'12345'

