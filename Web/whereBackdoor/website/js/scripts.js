@@ -60,7 +60,7 @@ queryBackend = async () => {
     const endpoint = document.getElementById("endpointInput").value;
 
     try {
-        const request = new Request("http://localhost:3000"+endpoint);
+        const request = new Request("https://apibackdoor.web.heroctf.fr"+endpoint);
         fetch(request)
         .then(res => {
             res.text().then(function(text) {
