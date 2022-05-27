@@ -4,8 +4,7 @@ author: Log_s
 category: System
 description: "
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+Format : Hero{flag}<br>Author : Log_s"
 value: null
 type: dynamic
 extra:

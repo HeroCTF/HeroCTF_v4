@@ -5,12 +5,14 @@ category: System
 description: "Here is your chance to take a look at one of starlinks internal systems. This server hosts the tool used by Elon Musks engineers to clone various websites. We've heard both the v1 and the v2 are flawed. Can you find and exploit the problems ?
 
 The base credentials are:
+
+
 ```
 user1:password123
 ```
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+
+Format : Hero{flag}<br>Author : Log_s"
 value: null
 type: dynamic
 extra:
@@ -32,5 +34,5 @@ tags:
     - hard
     - system
 
-state: visible 
+state: hidden 
 version: "0.1"

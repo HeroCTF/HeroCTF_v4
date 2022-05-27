@@ -4,8 +4,8 @@ author: Thib
 category: Steganography
 description: "Everything is in the title!
 
-Format : **Hero{flag}**<br>
-Author : **Thib**"
+
+Format : Hero{flag}<br>Author : Thib"
 
 value: null
 type: dynamic

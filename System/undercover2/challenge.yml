@@ -5,12 +5,14 @@ category: System
 description: "Now that you proved yourself, You have to assess the security of one of their developpers systems. He's a very good coder, but not that good at keeping his system safe. Could you report to us any vulnerabilities you find in his system?
 
 The base credentials are:
+
+
 ```
 user:password123
 ```
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+
+Format : Hero{flag}<br>Author : Log_s"
 value: null
 type: dynamic
 extra:

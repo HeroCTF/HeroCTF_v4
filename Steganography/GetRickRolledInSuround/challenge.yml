@@ -4,8 +4,8 @@ author: Log_s
 category: Steganography
 description: "This rickroll is hiding something...
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+
+Format : Hero{flag}<br>Author : Log_s"
 
 value: null
 type: dynamic

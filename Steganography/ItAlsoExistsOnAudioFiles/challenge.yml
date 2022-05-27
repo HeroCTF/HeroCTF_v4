@@ -4,8 +4,8 @@ author: Thib
 category: Steganography
 description: "Did you know that wave files are composed of frames?? It opens the field of possibilities!
 
-Format : **Hero{}**<br>
-Author : **Thib**"
+
+Format : Hero{flag}<br>Author : Thib"
 
 value: null
 type: dynamic
