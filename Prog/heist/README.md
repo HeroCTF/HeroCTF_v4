@@ -10,8 +10,8 @@ This new online bank is supposely unbreakable. They want us to prove it to the w
 Help me out will you ?
 
 ```
-Host : xxxx.heroctf.fr
-Port : xxxx
+Host : prog.heroctf.fr
+Port : 7001
 ```
 
 Format : **Hero{flag}**<br>
