@@ -1,0 +1,42 @@
+---
+name: HeroGuessr#1
+author: Alol
+category: osint
+description: "Aaah, the South of France... the pétanque, the pastis, the marseillais qui savent pas conduire... 
+I played a few games of pétanque in this parc, sadly I can't remember its name. Can you find it ? 
+
+Format : **Hero{Name Of The Parc}**<br>
+Author : **Alol**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Espace Victor Blanchin}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{Parc Victor Blanchin}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{Victor Blanchin}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - osint
+
+state: visible 
+version: "0.1"

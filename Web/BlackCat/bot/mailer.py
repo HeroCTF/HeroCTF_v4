@@ -13,9 +13,9 @@ BlackCat.
 """
 
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
+    host="blackcatbdd",
+    user="evilhackerz",
+    password="wjKNQJLSP4X3uPL522Q6",
     database="blackcat"
 )
 

@@ -15,3 +15,7 @@ function build() {
 build "./Prog/SSHs" "sshs:latest"
 build "./System/BlackOps" "blackops:latest"
 build "./System/Starlink" "starlink:latest"
+build "./Web/whereBackdoor" "wherebackdoor:latest"
+build "./Web/HeroVIP" "herovip:latest"
+build "./System/undercover1" "undercover_1:latest"
+build "./System/undercover2" "undercover_2:latest"
