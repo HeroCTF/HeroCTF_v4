@@ -23,5 +23,4 @@ services:
       - FLAG=Hero{Sm4ll_Mist4ke_c4n_be_d4ngerous_10853085}
     ports:
       - "5000:5000"
-    cpus: 1
-    mem_limit: 2048m
+
