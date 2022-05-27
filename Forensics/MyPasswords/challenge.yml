@@ -35,3 +35,6 @@ tags:
 
 state: visible 
 version: "0.1"
+
+files:
+    - dump.zip
