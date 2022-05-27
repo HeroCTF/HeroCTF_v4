@@ -9,10 +9,8 @@ Prog
 This new online bank is supposely unbreakable. They want us to prove it to the world. Here is the source code. It's messy, but simple. I can feel something's wrong, but I am not sure what.<br>
 Help me out will you ?
 
-```
-Host : prog.heroctf.fr
-Port : 7001
-```
+**Host** : prog.heroctf.fr<br>
+**Port** : 7001
 
 Format : **Hero{flag}**<br>
 Author : **Log_s**
