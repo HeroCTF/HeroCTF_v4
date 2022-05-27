@@ -8,6 +8,13 @@ Can you identify the actions of the malware that was loaded from the usb drive?
 
 /!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
 
+- [Download file](https://drive.google.com/file/d/11he5vp9roNBF5aex27FwZmVrcgjcHuPk/view?usp=sharing)
+
+```
+md5sum disk.7z : e283bd69d54592b6d0b40395ffdcbe0f
+md5sum disk.raw : bae9702315bd29dad3d30fea45f32575
+```
+
 Format : Hero{}<br>Author : Worty"
 value: null
 type: dynamic

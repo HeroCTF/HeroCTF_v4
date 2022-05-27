@@ -6,9 +6,18 @@ description: "For a change of pace, a company has been attacked again...
 
 Nevertheless, the means used here is quite original, indeed, it would be apparently a food delivery man who would be at the origin of the initial compromise...
 
-For your first analysis, you will have to identify the entry point used by the attacker to enter the machine.
+For your first analysis, you will have to found what the USB key that the delivery man put in the computer contains.
+
+Could you provide us the malicious URL used to download something ?
 
 /!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
+
+- [Download file](https://drive.google.com/file/d/1qiVubOoLjAegv2rb7IIJbnNgepAFOSai/view?usp=sharing)
+
+```
+md5sum dump.7z : c4125d54d6d54441086403912e44043a
+md5sum usb.dump : 8373029010f38b57042f5fb436058a1f
+```
 
 Format : Hero{}<br>Author : Worty"
 value: null
@@ -24,12 +33,12 @@ host: null
 flags:
     - {
         type: "static",
-        content: "Hero{}",
+        content: "Hero{http://146.59.156.82/img.png}",
         data: "case_insensitive",
     }
 
 tags:
-    - easy
+    - "very easy"
     - forensics
 
 state: visible 
