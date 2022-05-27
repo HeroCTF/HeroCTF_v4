@@ -14,6 +14,8 @@ services:
       - 443:443
     depends_on:
       - smallmistake
+      - blackcat
+      - flowercdn
 
   # --- smallmistake ---
   smallmistake:
