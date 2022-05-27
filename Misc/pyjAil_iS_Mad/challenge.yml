@@ -32,7 +32,7 @@ tags:
     - misc
 
 files:
-    - jail_redacted.py
+    - pyjail_redacted.py
 
 state: visible 
 version: "0.1"
