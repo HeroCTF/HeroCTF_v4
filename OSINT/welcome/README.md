@@ -2,7 +2,7 @@
 
 ### Category
 
-Misc
+Osint
 
 ### Description
 
