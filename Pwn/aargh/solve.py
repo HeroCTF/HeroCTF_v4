@@ -1,6 +1,7 @@
 from pwn import *
 
-r = process("./aargh")
+r = remote("aargh.heroctf.fr", 1337)
+#r = process("./aargh")
 
 """
 ========== Exploitation idea ==========
