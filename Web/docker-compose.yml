@@ -27,6 +27,17 @@ services:
     ports:
       - "5000:5000"
 
+  # --- wherebackdoor ---
+  wherebackdoor:
+    build:
+      context: ./whereBackdoor/
+      dockerfile: Dockerfile
+    restart: always
+    hostname: backdoor
+    container_name: backdoor
+    ports:
+      - "3000:3000"
+
   # --- blackcat ---
   bot:
     build:
