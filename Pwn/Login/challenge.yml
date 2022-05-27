@@ -1,0 +1,41 @@
+---
+name: Login
+author: SoEasY
+category: Pwn
+description: "
+Login and get the flag!
+
+
+```
+Host : pwn.heroctf.fr
+Port : 8002
+```
+
+
+Format : Hero{flag}<br>Author : SoEasY"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Y0u_w3r3_n0t_supp0s3d_t0_3nt3r!!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - pwn
+
+files:
+    - Login
+
+state: visible 
+version: "0.1"

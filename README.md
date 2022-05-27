@@ -50,6 +50,7 @@ Github : https://github.com/HeroCTF
 | [Stickerz#1](OSINT/Stickerz1/)                                      | OSINT         | yarienkiva | Easy        |  ✅  |
 | [Stickerz#2](OSINT/Stickerz2/)                                      | OSINT         | yarienkiva | Medium      |  ✅  |
 | [Impossible](Pwn/Impossible/)                                       | Pwn           | SoEasY     | Easy        |  ❌  |
+| [Login](Pwn/Login/)                                                 | Pwn           | SoEasY     | Easy        |  ❌  |
 | [Generator](Pwn/Generator)                                          | Pwn           | SoEasY     | Medium      |  ❌  |
 | [aargh](Pwn/aargh/)                                                 | Pwn           | SoEasY     | Hard        |  ❌  |
 | [MVBN](Reverse/MVBN/)                                               | Reverse       | SoEasY     | Easy        |  ❌  |
