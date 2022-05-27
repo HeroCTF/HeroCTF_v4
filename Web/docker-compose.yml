@@ -56,3 +56,5 @@ services:
       - MYSQL_DATABASE=blackcat
     volumes:
       - "./BlackCat/bdd/:/docker-entrypoint-initdb.d/"
+
+  # --- flowercdn ---
