@@ -5,10 +5,11 @@ category: Web
 description: "Pre-sales are available for the HeroCTF 5 edition. 
 Unfortunately you saw this too late and there is a 7 days wait in the queue with only 3 days left to order...
 
+
 It's up to you to figure out how to get past this line...
 
-Format : **Hero{}**<br>
-Author : **Worty**"
+
+Format : Hero{}<br>Author : Worty"
 value: null
 type: dynamic
 extra:
@@ -30,5 +31,5 @@ tags:
     - hard
     - web
 
-state: visible 
+state: hidden 
 version: "0.1"

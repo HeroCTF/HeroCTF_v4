@@ -2,13 +2,13 @@ name: "SmallMistakeBigMistake"
 author: "xanhacks"
 category: Web
 description: "The website developer made a small mistake in the code of his website.
-
 Can you identify and exploit it to extract the flag?
 
-URL : http://xxx
 
-Format : **Hero{flag}**<br>
-Auteur : **xanhacks**"
+- [https://smallbigmistake.web.heroctf.fr](https://smallbigmistake.web.heroctf.fr)
+
+
+Format : Hero{flag}<br>Auteur : xanhacks"
 value: 0
 type: dynamic
 

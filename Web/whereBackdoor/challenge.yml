@@ -4,13 +4,11 @@ author: Log_s
 category: Web
 description: "These web masters are trying to show off their skills. But in reality, there are kind of lazy. They left a backdoor on the server for them to do some maintenance. Find it, exploit it :)
 
-```
-Host : xxxx.heroctf.fr
-Port : xxxx
-```
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+- [https://wherebackdoor.web.heroctf.fr](https://wherebackdoor.web.heroctf.fr)
+
+
+Format : Hero{flag}<br>Author : Log_s"
 value: null
 type: dynamic
 extra:

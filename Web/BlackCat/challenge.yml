@@ -8,13 +8,11 @@ At this event, there doesn't seem to be any legal conferences, and it seems to g
 
 Find a way to get the location of this conference before the deadline.
 
-```
-Host : xxxx.heroctf.fr
-Port : xxxx
-```
 
-Format : **Hero{}**<br>
-Author : **Worty**"
+- [https://blackcat.web.heroctf.fr](https://blackcat.web.heroctf.fr)
+
+
+Format : Hero{}<br>Author : Worty"
 value: null
 type: dynamic
 extra:
