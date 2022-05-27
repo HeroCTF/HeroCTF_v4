@@ -1,0 +1,31 @@
+---
+name: pyjAil iS Mad
+author: Log_s
+category: System
+description: "
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{pyth0n_4ss3mbly}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - system
+
+state: visible 
+version: "0.1"
