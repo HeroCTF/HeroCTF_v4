@@ -20,7 +20,7 @@ Github : https://github.com/HeroCTF
 
 | Name                                                                    | Category      | Author     | Difficulty  | Done |
 |-------------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
-| [Painting](Misc/Painting)                                               | Misc          | SoEasY     | Easy        |  ❌  |
+| [Painting](Misc/Painting)                                               | Misc          | SoEasY     | Easy        |  ✅  |
 | [Redacted](Misc/Redacted/)                                              | Misc          | Log\_s     | Medium      |  ✅  |
 | [pyjAil iS Mad](Misc/pyjAil_iS_Mad/)                                    | Misc          | Log\_s     | Hard        |  ✅  |
 | [Heist](Prog/heist/)                                                    | Prog          | Log\_s     | Easy        |  ✅  |
