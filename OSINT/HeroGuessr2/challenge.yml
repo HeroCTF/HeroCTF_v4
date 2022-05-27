@@ -5,8 +5,11 @@ category: osint
 description: "I found this town with a funny name while driving back to my university after a week at work.
 Can you find its name ?
 
-Format : **Hero{Name-of-the-Town}**<br>
-Author : **Alol**"
+
+- [https://heroguessr2.osint.heroctf.fr](https://heroguessr2.osint.heroctf.fr)
+
+
+Format : Hero{Name-of-the-Town}<br>Author : Alol"
 value: null
 type: dynamic
 extra:

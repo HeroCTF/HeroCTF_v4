@@ -4,8 +4,8 @@ author: Log_s
 category: misc
 description: "Did you pay attention to everything going on before the start of the CTF ?
 
-Format : **Hero{flag}**<br>
-Author : **Log_s**"
+
+Format : Hero{flag}<br>Author : Log_s"
 value: null
 type: dynamic
 extra:

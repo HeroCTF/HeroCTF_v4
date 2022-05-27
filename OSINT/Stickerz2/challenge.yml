@@ -4,8 +4,8 @@ author: Alol
 category: osint
 description: "Don't you love the seaside ? I didn't realize it at first but I put a HeroCTF sticker just above the painting of a famous artist. Can you find the painting's name ?
 
-Format : **Hero{Painting's name as written on Google Maps}**<br>
-Author : **Alol**"
+
+Format : Hero{Painting's name as written on Google Maps}<br>Author : Alol"
 value: null
 type: dynamic
 extra:

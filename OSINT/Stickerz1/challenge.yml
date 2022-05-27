@@ -4,8 +4,8 @@ author: Alol
 category: osint
 description: "Snapped this photo while out for a walk at night. Next to the market there's a theater. Can you find its name ?
 
-Format : **Hero{Theater's name as written on Google Maps}**<br>
-Author : **Alol**"
+
+Format : Hero{Theater's name as written on Google Maps}<br>Author : Alol"
 value: null
 type: dynamic
 extra:
