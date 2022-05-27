@@ -5,7 +5,7 @@ services:
 
   selfcontrolv2:
     build:
-      context: ./sELF\ control\ v2/
+      context: ./sELF_control_v2/
     environment:
       - LISTEN_PORT=9000
     ports:
