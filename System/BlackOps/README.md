@@ -16,13 +16,6 @@ user1:password123
 Format : **Hero{flag}**<br>
 Author : **Log_s**
 
-### Note to run the challenge
-
-Run the docker with SYS_PTRACE capibiltiy enabled.
-```
-docker run -p 22:22 --cap-add=SYS_PTRACE  blackops
-```
-
 ### Write up
 
 First thing we notice, is the `servers` folder. There is the following note in it:
