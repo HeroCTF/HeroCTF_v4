@@ -18,3 +18,12 @@ services:
       - LISTEN_PORT=8001
     ports:
       - "8001:8001"
+    
+  login:
+    build:
+      context: ./Login/
+    environment:
+      - LISTEN_PORT=8002
+    ports:
+      - "8002:8002"
+    
