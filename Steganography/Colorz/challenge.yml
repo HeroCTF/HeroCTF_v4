@@ -4,8 +4,8 @@ author: Thib
 category: Steganography
 description: "It's all about the colors.
 
-Format : **Hero{flag}**<br>
-Author : **Thib**"
+
+Format : Hero{flag}<br>Author : Thib"
 
 value: null
 type: dynamic
