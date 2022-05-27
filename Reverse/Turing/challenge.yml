@@ -6,12 +6,11 @@ description: "
 A strange character approaches you and whispers in your ear «Hey did you know that the mov instruction was Turing complete?».
 He then slips a USB stick with a strange binary on it into your pocket.
 
+
 Can you solve his riddle?
 
 
-Format : **Hero{flag}**<br>
-Author : **SoEasY**
-"
+Format : Hero{flag}<br>Author : SoEasY"
 value: null
 type: dynamic
 extra:

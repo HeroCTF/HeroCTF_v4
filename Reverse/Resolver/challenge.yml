@@ -15,9 +15,7 @@ He wants you to give him the values to pass as parameters to resolve the followi
 - SetThreadPreferredUILanguages (val3)
 
 
-Format : **Hero{0xval1:0xval2:0xval3}**<br>
-Author : **SoEasY**
-"
+Format : Hero{0xval1:0xval2:0xval3}<br>Author : SoEasY"
 value: null
 type: dynamic
 extra:

@@ -8,6 +8,12 @@ description: "Looks like the oracle took a nice long holiday and her apprentice 
 Good luck !
 
 
+```
+Host : crypto.heroctf.fr
+Port : 9000
+```
+
+
 Format : Hero{flag}<br>Author : Alol"
 
 value: null
@@ -28,7 +34,7 @@ flags:
     }
 
 tags:
-    - easy
+    - medium
     - crypto
 
 files:

@@ -12,8 +12,7 @@ Port : 1337
 ```
 
 
-Format : **Hero{flag}**<br>
-Author : **SoEasY**"
+Format : Hero{flag}<br>Author : SoEasY"
 value: null
 type: dynamic
 extra:

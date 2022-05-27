@@ -9,14 +9,12 @@ Can you help me ?
 
 
 ```
-Host : xxxx.heroctf.fr
-Port : xxxx
+Host : reverse.heroctf.fr
+Port : 9000
 ```
 
 
-Format : **Hero{flag}**<br>
-Author : **SoEasY**
-"
+Format : Hero{flag}<br>Author : SoEasY"
 value: null
 type: dynamic
 extra:

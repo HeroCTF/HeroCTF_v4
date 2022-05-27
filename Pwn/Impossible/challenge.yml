@@ -9,13 +9,12 @@ Show him who's the boss!
 
 
 ```
-Host : xxxx.heroctf.fr
-Port : xxxx
+Host : pwn.heroctf.fr
+Port : 8001
 ```
 
 
-Format : **Hero{flag}**<br>
-Author : **SoEasY**"
+Format : Hero{flag}<br>Author : SoEasY"
 value: null
 type: dynamic
 extra:
