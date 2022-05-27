@@ -22,6 +22,7 @@ Github : https://github.com/HeroCTF
 |---------------------------------------------------------------------|:-------------:|:----------:|:-----------:|:----:|
 | [Painting](Misc/Painting)                                           | Misc          | SoEasY     | Easy        |  ❌  |
 | [Redacted](Misc/Redacted/)                                          | Misc          | Log\_s     | Medium      |  ✅  |
+| [pyjAil iS Mad](Misc/pyjAil_iS_Mad/)                                | Misc          | Log\_s     | Hard        |  ✅  |
 | [Heist](Prog/heist/)                                                | Prog          | Log\_s     | Easy        |  ✅  |
 | [Pixel Poney](Prog/pixel_poney/)                                    | Prog          | Log\_s     | Easy        |  ✅  |
 | [Overload](Prog/Overload/)                                          | Prog          | xanhacks   | Easy        |  ✅  |
@@ -33,7 +34,6 @@ Github : https://github.com/HeroCTF
 | [FlowerCDN](Web/FlowerCDN/)                                         | Web           | Worty      | Hard        |  ✅  |
 | [Undercorver #1](System/undercover1/)                               | System        | Log\_s     | Easy        |  ✅  |
 | [Undercorver #2](System/undercover2/)                               | System        | Log\_s     | Medium      |  ✅  |
-| [pyjAil iS Mad](System/pyjAil_iS_Mad/)                              | System        | Log\_s     | Medium      |  ✅  |
 | [BlackOps](System/BlackOps/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [Starlink](System/Starlink/)                                        | System        | Log\_s     | Hard        |  ✅  |
 | [GetRickRolledInSuround](Steganography/GetRickRolledInSuround/)     | Steganography | Log\_s     | Medium      |  ✅  |
