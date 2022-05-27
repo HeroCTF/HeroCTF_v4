@@ -1,0 +1,34 @@
+---
+name: Where all problems starts 2/4
+author: Worty
+category: Forensics
+description: "Well, the USB key was pretty obvious! You are now provided with a dump of the file system of the infected machine.
+
+Can you identify the actions of the malware that was loaded from the usb drive?
+
+/!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
+
+Format : Hero{}<br>Author : Worty"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{p3rs0n4l_3v1l_m4lw4r3_n0t_fl4g_by_d3f3nd3r}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - "very hard"
+    - forensics
+
+state: visible 
+version: "0.1"

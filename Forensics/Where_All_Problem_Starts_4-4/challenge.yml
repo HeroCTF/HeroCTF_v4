@@ -1,0 +1,34 @@
+---
+name: Where all problems starts 4/4
+author: Worty
+category: Forensics
+description: "A network administrator has woken up and tells us that he makes network dumps very frequently.
+
+Moreover, the malware seems to have exfiltrated files but we are not sure and the capture seems unreadable... it's up to you to find the exfiltrated files!
+
+/!\ WARNING : This challenge contains malicious file that can harm your computer ! Do not run them on your host machine ! I am not responsible for any potential damage to your machine. /!\
+
+Format : Hero{}<br>Author : Worty"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{024bcd670b1a35fef0ec6a547a20cfbc}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - forensics
+
+state: visible 
+version: "0.1"
