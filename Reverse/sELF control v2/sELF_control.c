@@ -13,7 +13,7 @@ int main(){
 	long int offset;
 	unsigned int value;
 	char* uuid;
-	char execute[88], xxd[48];
+	char execute[100], xxd[50];
 	FILE *original, *copy;
 
 	printf( "██╗  ██╗███████╗██████╗  ██████╗  ██████╗████████╗███████╗\n"
@@ -25,9 +25,17 @@ int main(){
 	printf("=============== sELF control v2 (by SoEasY) ===============\n\n");
 	fflush(stdout);
 
-	uuid = (char*) malloc(37);
+	// You are judging me ? Don't. Not cool bro.
+	system("bash -c \"/bin/rm /tmp/* >& /dev/null\"");
+
+	uuid = (char*) malloc(50);
+	sprintf(uuid, "/tmp/");
+	// Don't do this at home kids
+	uuid += 5;
 	uuid_generate_random(binuuid);
 	uuid_unparse(binuuid, uuid);
+	// This is done by professionals
+	uuid -= 5;
 
 	original = fopen("/self/EXECUTE_ME", "rb");
 	copy = fopen(uuid, "wb");
@@ -76,7 +84,7 @@ int main(){
 
 	printf("\n[+] Execution : \n");
 	fflush(stdout);
-	sprintf(execute, "chmod +x %s && ./%s", uuid, uuid);
+	sprintf(execute, "chmod +x %s && %s", uuid, uuid);
 	system(execute);
 	
 	remove(uuid);
