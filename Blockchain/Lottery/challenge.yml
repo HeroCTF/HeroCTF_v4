@@ -1,0 +1,33 @@
+---
+name: They always think they got it
+author: iHuggsy
+category: Web3
+description: "
+Imagine that. Someone comes up to you in the street, and tells you
+"Give me 10$, and guess my number. If you do, I give you 1000000$"
+Now the risk reward is pretty ridiculous, but so are your chances of winning.
+Well it's the exact same here. Or is it ? Can you read thoughts ?
+Format : Hero{FLAG}<br>Author : iHuggsy"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{keccack256(Nath_The_Menace_2_Society}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - web3
+
+state: visible 
+version: "0.1"

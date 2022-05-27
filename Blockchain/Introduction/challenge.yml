@@ -1,0 +1,30 @@
+---
+name: Let's introduce ourselves
+author: iHuggsy
+category: Web3
+description: "
+We will start easy. Make sure you have read the introduction if you need it. If you don't, then why haven't you flagged yet ?
+Format : Hero{FLAG}<br>Author : iHuggsy"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{W3lC0me_2_H3r0Ch41n_W@gM1}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - web3
+
+state: visible 
+version: "0.1"
