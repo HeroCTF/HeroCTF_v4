@@ -3,8 +3,8 @@ name: An oldie but a goodie
 author: iHuggsy
 category: Web3
 description: "
-"I copy pasted from the internet, and it works so it'll be fine !"
-This is a private "ENS", which maps a name to an address.
+'I copy pasted from the internet, and it works so it'll be fine !'
+This is a private 'ENS', which maps a name to an address.
 If you manage to register the 3viL.com domain to be mapped
 with the f address (0xffffffffffffffffffffffffffffffffffffffff),
 you'd burn all of their incoming funds !
