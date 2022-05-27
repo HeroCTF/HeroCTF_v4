@@ -16,11 +16,11 @@ services:
   heroguessr_1:
     build: ./HeroGuessr1/
     restart: always
-    ports:
-      - "5000:80"
+    expose:
+      - 80
 
   heroguessr_2:
     build: ./HeroGuessr2/
     restart: always
-    ports:
-      - "5001:80"
+    expose:
+      - 80
