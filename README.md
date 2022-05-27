@@ -49,7 +49,7 @@ Github : https://github.com/HeroCTF
 | [HeroGuessr #2](OSINT/HeroGuessr#2/)                                    | OSINT         | yarienkiva | Hard        |  ✅  |
 | [Stickerz#1](OSINT/Stickerz1/)                                          | OSINT         | yarienkiva | Easy        |  ✅  |
 | [Stickerz#2](OSINT/Stickerz2/)                                          | OSINT         | yarienkiva | Medium      |  ✅  |
-| [Impossible](Pwn/Impossible/)                                           | Pwn           | SoEasY     | Easy        |  ❌  |
+| [Impossible](Pwn/Impossible/)                                           | Pwn           | SoEasY     | Easy        |  ✅  |
 | [Login](Pwn/Login/)                                                     | Pwn           | SoEasY     | Easy        |  ❌  |
 | [Generator](Pwn/Generator)                                              | Pwn           | SoEasY     | Medium      |  ❌  |
 | [aargh](Pwn/aargh/)                                                     | Pwn           | SoEasY     | Hard        |  ❌  |
