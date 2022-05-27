@@ -58,3 +58,46 @@ services:
       - "./BlackCat/bdd/:/docker-entrypoint-initdb.d/"
 
   # --- flowercdn ---
+  internalapi:
+    build:
+      context: ./FlowerCDN/internal_search_api/
+      dockerfile: Dockerfile
+    restart: always
+    hostname: internal_search_api
+    container_name: flowercdn-internal_search_api
+    networks:
+      - flowerinternal
+
+  flowercdn:
+    build:
+      context: ./FlowerCDN/flowercdn/
+      dockerfile: Dockerfile
+    restart: always
+    hostname: flowercdn
+    container_name: flowercdn-site
+    ports:
+      - "20080:80"
+    networks:
+      - flowerinternal
+      - default
+
+  sql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    container_name: flowercdn-bdd
+    expose:
+      - 3306
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=flower
+      - MYSQL_PASSWORD=wjobQwN4X3uwT6zE
+      - MYSQL_DATABASE=flowercdn
+    volumes:
+      - "./FlowerCDN/bdd/:/docker-entrypoint-initdb.d/"
+    networks:
+      - flowerinternal
+
+networks:
+  flowerinternal:
+    internal: true
