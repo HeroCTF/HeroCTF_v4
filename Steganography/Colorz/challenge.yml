@@ -1,0 +1,35 @@
+---
+name: Colorz
+author: Thib
+category: Steganography
+description: "It's all about the colors.
+
+Format : **Hero{flag}**<br>
+Author : **Thib**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{FL4GZ}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - stega
+
+files:
+    - colorz.png
+
+state: visible 
+version: "0.1"
