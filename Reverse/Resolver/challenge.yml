@@ -7,8 +7,11 @@ You are trying to get into a malware development forum and an administrator give
 
 According to him, this function is used for dynamic resolving.
 He wants you to give him the values to pass as parameters to resolve the following functions:
+
 - GetDateFormatWWorker (val1)
+
 - IsWow64GuestMachineSupported (val2)
+
 - SetThreadPreferredUILanguages (val3)
 
 
