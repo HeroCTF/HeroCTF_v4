@@ -15,6 +15,5 @@ RUN groupadd ctf && \
 RUN chmod 4755 /jail/pyjail.py && \
     chmod 4755 /jail/entry.sh
 
-ENV LISTEN_PORT 6000
 EXPOSE ${LISTEN_PORT}
 ENTRYPOINT ["/jail/entry.sh"]
