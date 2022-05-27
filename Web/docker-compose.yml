@@ -52,8 +52,6 @@ services:
       dockerfile: Dockerfile
     restart: always
     container_name: blackcat_appli
-    ports:
-      - "20090:80"
 
   blackcatbdd:
     image: mysql
@@ -88,8 +86,6 @@ services:
     restart: always
     hostname: flowercdn
     container_name: flowercdn-site
-    ports:
-      - "20080:80"
     networks:
       - flowerinternal
       - default
