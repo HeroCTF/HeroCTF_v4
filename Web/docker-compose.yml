@@ -15,6 +15,7 @@ services:
     depends_on:
       - smallmistake
 
+  # --- smallmistake ---
   smallmistake:
     build: ./SmallMistakeBigMistake/
     restart: always
@@ -24,3 +25,34 @@ services:
     ports:
       - "5000:5000"
 
+  # --- blackcat ---
+  bot:
+    build:
+      context: ./BlackCat/bot/
+      dockerfile: Dockerfile
+    restart: always
+    container_name: blackcat_bot
+
+  blackcat:
+    build:
+      context: ./BlackCat/appli/
+      dockerfile: Dockerfile
+    restart: always
+    container_name: blackcat_appli
+    ports:
+      - "20090:80"
+
+  blackcatbdd:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    container_name: blackcat_bdd
+    expose:
+      - 3306
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=evilhackerz
+      - MYSQL_PASSWORD=wjKNQJLSP4X3uPL522Q6
+      - MYSQL_DATABASE=blackcat
+    volumes:
+      - "./BlackCat/bdd/:/docker-entrypoint-initdb.d/"
