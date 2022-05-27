@@ -5,5 +5,5 @@
 	path = Reverse/Turing/demovfuscator
 	url = https://github.com/kirschju/demovfuscator
 [submodule "Misc/Painting/REpsych"]
-	path = Steganography/Painting/REpsych
+	path = Misc/Painting/REpsych
 	url = https://github.com/xoreaxeaxeax/REpsych

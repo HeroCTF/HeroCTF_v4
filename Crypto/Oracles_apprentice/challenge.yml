@@ -2,14 +2,18 @@
 name: The oracle's apprentice
 author: yarienkiva
 category: Crypto
-description: "Looks like the oracle took a nice long holiday and her apprentice had to cover for her.
-She's new to the job so if she forgets anything... you'll just have to deal with it.
-Good luck !"
+description: "Looks like the oracle took a nice long holiday and her apprentice had to cover for her. She's new to the job so if she forgets anything... you'll just have to deal with it.
+
+
+Good luck !
+
+
+Format : Hero{flag}<br>Author : yarienkiva"
 
 value: null
 type: dynamic
 extra:
-    initial: 100
+    initial: 500
     decay: 100
     minimum: 50
 

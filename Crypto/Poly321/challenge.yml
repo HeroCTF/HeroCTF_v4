@@ -1,7 +1,7 @@
 ---
 name: Poly321
 author: xanhacks
-category: Prog
+category: Crypto
 description: "An unskilled mathematician has created an encryption function. Can you decrypt the message ?
 
 
@@ -10,7 +10,7 @@ Format : Hero{flag}<br>Author : xanhacks"
 value: null
 type: dynamic
 extra:
-    initial: 100
+    initial: 500
     decay: 100
     minimum: 50
 
@@ -25,7 +25,7 @@ flags:
     }
 
 tags:
-    - easy
+    - very easy
     - crypto
 
 files:
