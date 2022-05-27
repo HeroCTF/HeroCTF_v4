@@ -1,0 +1,12 @@
+---
+version: "3.3"
+
+services:
+
+  pyjail:
+    build:
+      context: ./pyjAil_iS_Mad/
+    environment:
+      - LISTEN_PORT=6000
+    ports:
+      - "6000:6000"
