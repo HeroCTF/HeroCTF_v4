@@ -1,4 +1,4 @@
-import smtplib, ssl, mysql.connector, datetime, time
+import smtplib, ssl, mysql.connector, datetime
 
 pwd = ":J2.bmF4.q/'=2T^gb(["
 sender_email = "contactblackcat2k22@gmail.com"
@@ -47,6 +47,4 @@ def main():
             service.sendmail(sender_email,email[2],f"Subject: {subject}\n{content}")
     delete(id_to_delete)
 
-while True:
-	main()
-	time.sleep(10)
+main()
