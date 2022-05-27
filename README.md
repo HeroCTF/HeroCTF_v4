@@ -58,3 +58,7 @@ Github : https://github.com/HeroCTF
 | [Resolver](Reverse/Resolver/)                                       | Reverse       | SoEasY     | Medium      |  ❌  |
 | [Turing](Reverse/Turing/)                                           | Reverse       | SoEasY     | Hard        |  ❌  |
 | [My Passwords](Forensics/MyPasswords)				                  | Forensics     | Worty      | Easy        |  ✅  |
+| [Where all problems starts 1/4](Forensics/Where_All_Problem_Starts_1-4) | Forensics | Worty | Easy |✅ |
+| [Where all problems starts 2/4](Forensics/Where_All_Problem_Starts_2-4) | Forensics | Worty | Very hard |✅ |
+| [Where all problems starts 3/4](Forensics/Where_All_Problem_Starts_3-4) | Forensics | Worty | Medium |✅ |
+| [Where all problems starts 4/4](Forensics/Where_All_Problem_Starts_4-4) | Forensics | Worty | Hard |✅ |
