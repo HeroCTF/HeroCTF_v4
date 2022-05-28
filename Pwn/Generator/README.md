@@ -65,7 +65,7 @@ So we can see that a random 7-bytes-long string is generated and placed in a glo
 Then, an input is asked to the user on 100 bytes to fit in a char[5] --> evident buffer overflow here, but the trick is that it has to start with "yes" without what `exit(1)` will be called and the main return will never be called.
 
 Then, we can observe a symbol called `interesting`, let's see what's going on there:
-```x86asm
+```nasm
 .text:0x401216     endbr64
 .text:0x40121A     push    rbp
 .text:0x40121B     mov     rbp, rsp
