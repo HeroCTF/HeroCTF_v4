@@ -1,0 +1,33 @@
+---
+version: "3.3"
+services:
+  bot:
+    build:
+      context: ./bot/
+      dockerfile: Dockerfile
+    restart: always
+    container_name: blackcat_bot
+
+  blackcat:
+    build:
+      context: ./appli/
+      dockerfile: Dockerfile
+    restart: always
+    container_name: blackcat_appli
+    ports:
+      - "80:80"
+
+  blackcatbdd:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    container_name: blackcat_bdd
+    expose:
+      - 3306
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=evilhackerz
+      - MYSQL_PASSWORD=wjKNQJLSP4X3uPL522Q6
+      - MYSQL_DATABASE=blackcat
+    volumes:
+      - "./bdd/:/docker-entrypoint-initdb.d/"

