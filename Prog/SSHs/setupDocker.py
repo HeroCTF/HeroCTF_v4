@@ -24,7 +24,7 @@ for i in range(2, NB_USERS+1):
     password = ''.join(choice(hexdigits) for i in range(PASS_LENGTH))
 
     # Create user
-    subprocess.Popen(f"useradd -m -d /home/{user} -s /bin/bash {user} && echo '{user}:{password}' | chpasswd", shell=True).communicate()
+    subprocess.Popen(f"useradd -m -d /home/{user} -s /bin/bash {user} && echo '{user}:{password}' | chpasswd && chmod 700 /home/{user}", shell=True).communicate()
 
     # Create keys
     subprocess.Popen(f"su {user} -c 'ssh-keygen -b 4096 -t rsa -f ~/.ssh/id_rsa -q -N \"\" && mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys'", shell=True).communicate()
