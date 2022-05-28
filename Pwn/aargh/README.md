@@ -34,7 +34,7 @@ $ checksec ./aargh_REDACTED
 So here we have no PIE and no stack canary: the perfect setup to ROP.
 Let's take a look at the main function:
 
-```arm
+```armasm
 $ aarch64-linux-gnu-objdump -d ./aargh_REDACTED
 ...
 00000000004006fc <vuln>:
@@ -68,7 +68,7 @@ $ aarch64-linux-gnu-objdump -d ./aargh_REDACTED
 So the main function just calls `vuln()`. This second function will just do a `printf("...")`, `fflush(stdout)` and then a `read(stdin, char stack_buffer[256], 0x5dc)` (0x5dc == 1500): there is here an evident stack overflow.
 
 With can by the way find an interesting function called `secret()`:
-```arm
+```armasm
 $ aarch64-linux-gnu-objdump -d ./aargh_REDACTED
 ...
 0000000000400664 <secret>:
