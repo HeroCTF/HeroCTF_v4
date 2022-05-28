@@ -19,16 +19,20 @@ def compute_checksum(function_name):
             sum += (c - 0x20)
     return sum
  
+result = {}
 
 def main():
     export_table = open('kernel32_exports.txt', 'r')
 
     for line in export_table:
         function = line.split()[0]
-        hash = hex(compute_checksum(function))
-        print(f"- checksum(\"{function}\") = {hash}")
-
+        if function in ["GetDateFormatWWorker", "IsWow64GuestMachineSupported", "SetThreadPreferredUILanguages"]:
+            hash = hex(compute_checksum(function))
+            result[function] = hash
     export_table.close()
+    
+    print(f"[+] Result: {result}")
+    print("[+] Flag: Hero{" + f"{result['GetDateFormatWWorker']}:{result['IsWow64GuestMachineSupported']}:{result['SetThreadPreferredUILanguages']}" + "}")
 
 
 if __name__ == '__main__':
