@@ -9,7 +9,7 @@ def flag():
 def jail():
     user_input = input(">> ")
 
-    filtered = ["import", "os", "sys", "eval", "exec", "__builtins__", "__dict__", "__base__", "__class__", "__subclass__", "dir", "help", "exit", "open", "read"]
+    filtered = ["import", "os", "sys", "eval", "exec", "__builtins__", "__globals__", "__getattribute__", "__dict__", "__base__", "__class__", "__subclass__", "dir", "help", "exit", "open", "read"]
 
     valid_input = True
     for f in filtered:
