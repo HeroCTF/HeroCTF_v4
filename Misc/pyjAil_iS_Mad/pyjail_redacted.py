@@ -18,10 +18,6 @@ def jail():
             valid_input = False
             break
     
-    if not all(ord(c) < 128 for c in user_input):
-        valid_input = False
-        print("That's not ascii mate")
-    
     if valid_input:
         try:
             exec(user_input, {"__builtins__": {}}, {'flag':flag})
