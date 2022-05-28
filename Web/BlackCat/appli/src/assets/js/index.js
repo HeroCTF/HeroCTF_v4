@@ -261,7 +261,7 @@ var main = (function () {
             var xhr = new XMLHttpRequest();
             xhr.open("POST","/api/newsletter.php",true)
             xhr.send('email='+cmdComponents[0])
-            this.apiResponse(cmdComponents,"You will receive the email for the exact location in 3 days. Thank you.")
+            this.apiResponse(cmdComponents,"Problem on front-end, as a real hacker, use your terminal to request backend.")
      }else this.invalidCommand(cmdComponents);
     };
 
