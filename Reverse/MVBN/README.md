@@ -19,7 +19,7 @@ Author : **SoEasY**
 
 ### Write up
 
-Here we've got an LLVM IR (Intermediate Representation) file. The easiest way to reverse it is probable to compile it to make an ELF and reverse it afterwards.
+Here we've got an LLVM IR (Intermediate Representation) file. The easiest way to reverse is probably to compile it to make an ELF and reverse it afterwards.
 - compile LLVM IR to ELF x64 (without linking) : `llc -o MVBN.o MVBN.s -filetype=obj`
 - link libc : `gcc -no-pie -o MVBN MVBN.o`
 
