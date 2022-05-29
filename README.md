@@ -43,7 +43,6 @@ Github : https://github.com/HeroCTF
 | [LSD](Steganography/LSD/)                                               | Steganography | Thibz      | Medium      |  ✅  |
 | [Poly321](Crypto/Poly321/)                                              | Crypto        | xanhacks   | Easy        |  ✅  |
 | [The oracle's apprentice](Crypto/Oracles_apprentice/)                   | Crypto        | yarienkiva | Easy        |  ✅  |
-| [EnsembleContreCovid](Crypto/EnsembleContreCovid/)                      | Crypto        | yarienkiva | Medium      |  ❌  |
 | [Welcome](OSINT/welcome/)                                               | OSINT         | Log\_s     | Easy        |  ✅  |
 | [HeroGuessr #1](OSINT/HeroGuessr#1/)                                    | OSINT         | yarienkiva | Easy        |  ✅  |
 | [HeroGuessr #2](OSINT/HeroGuessr#2/)                                    | OSINT         | yarienkiva | Hard        |  ✅  |
