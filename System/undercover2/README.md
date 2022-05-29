@@ -13,6 +13,8 @@ The base credentials are:
 user1:password123
 ```
 
+NB: the content of the website is not relevant, you should get a 500 anyway ;)
+
 Format : **Hero{flag}**<br>
 Author : **Log_s**
 

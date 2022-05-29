@@ -1,12 +1,12 @@
 from jumpssh import SSHSession
 from os import remove
 
-host = '127.0.0.1'
-port = 22
+host = 'chall.heroctf.fr'
+port = 10027
 
 #Connect to machine
 print("[*] Connect to gateway ssh account\n")
-gateway = SSHSession(host, "user1", port=2022, password="password123")
+gateway = SSHSession(host, "user1", port=port, password="password123")
 
 # Keep track of sessions
 active_session = gateway

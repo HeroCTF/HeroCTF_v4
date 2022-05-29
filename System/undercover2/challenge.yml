@@ -12,6 +12,9 @@ user:password123
 ```
 
 
+NB: the content of the website is not relevant, you should get a 500 anyway ;)
+
+
 Format : Hero{flag}<br>Author : Log_s"
 value: null
 type: dynamic
