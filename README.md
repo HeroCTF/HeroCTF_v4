@@ -53,9 +53,9 @@ Github : https://github.com/HeroCTF
 | [Login](Pwn/Login/)                                                     | Pwn           | SoEasY     | Easy        |  ✅  |
 | [Generator](Pwn/Generator)                                              | Pwn           | SoEasY     | Medium      |  ✅  |
 | [aargh](Pwn/aargh/)                                                     | Pwn           | SoEasY     | Hard        |  ✅  |
-| [MVBN](Reverse/MVBN/)                                                   | Reverse       | SoEasY     | Easy        |  ❌  |
+| [MVBN](Reverse/MVBN/)                                                   | Reverse       | SoEasY     | Easy        |  ✅  |
 | [sELF control v2](Reverse/sELF_control_v2/)                             | Reverse       | SoEasY     | Medium      |  ❌  |
-| [Resolver](Reverse/Resolver/)                                           | Reverse       | SoEasY     | Medium      |  ❌  |
+| [Resolver](Reverse/Resolver/)                                           | Reverse       | SoEasY     | Medium      |  ✅  |
 | [Turing](Reverse/Turing/)                                               | Reverse       | SoEasY     | Hard        |  ❌  |
 | [My Passwords](Forensics/MyPasswords)				                      | Forensics     | Worty      | Easy        |  ✅  |
 | [Where all problems starts 1/4](Forensics/Where_All_Problem_Starts_1-4) | Forensics     | Worty      | Easy        |  ✅  |

@@ -41,7 +41,7 @@ hero{wellplayedprogmaster}
 2. Using bash :
 
 ```bash
-$ cat overload.txt | tr -d '[:upper:]'
+$ tr -d '[:upper:]' < overload.txt
 hero{wellplayedprogmaster}
 ```
 

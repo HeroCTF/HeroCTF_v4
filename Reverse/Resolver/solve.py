@@ -18,10 +18,10 @@ def compute_checksum(function_name):
         else:
             sum += (c - 0x20)
     return sum
- 
-result = {}
+
 
 def main():
+    result = {}
     export_table = open('kernel32_exports.txt', 'r')
 
     for line in export_table:
