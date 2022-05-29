@@ -9,14 +9,12 @@ bin_sh          db      0x34 ; "/"                     ;   e_ident[EI_DATA]
                 db      0x17 ; "i"                     ;   e_ident[EI_OSABI]
                 db      0xb1 ; "n"                     ;   e_ident[EI_ABIVERSION]
                 
-                db      0x34
-                db      0x80
-                db      0x97
-                db      0x39
+                db      0x34 ; '/'              ;   e_ident[EI_PAD]  
+                db      0x80 ; 's'
+                db      0x97 ; 'h'
+                db      0x39 ; '\x00'
                 dw      0
                 db      0
-                ; db      "/sh", 0, 0, 0, 0       ;   e_ident[EI_PAD]        
-
                 dw      2                       ;   e_type      (ET_EXEC)
                 dw      3                       ;   e_machine   (x86)
                 dd      1                       ;   e_version   (ELF version)
