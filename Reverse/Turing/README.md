@@ -28,7 +28,7 @@ The first step was to compile this demovfuscator and for this, to me, there was 
 - Compile the keystone project to have the libs
 - Compile the movfuscator (lol)
 
-After apllying the demovfuscator on the challenge, we can launch it to see how it works:
+After applying the demovfuscator on the challenge, we can launch it to see how it works:
 ```bash
 $ ./Turing_deobfuscated 
 usage: ./Turing_deobfuscated <flag>
