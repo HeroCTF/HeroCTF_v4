@@ -54,7 +54,7 @@ Github : https://github.com/HeroCTF
 | [Generator](Pwn/Generator)                                              | Pwn           | SoEasY     | Medium      |  ✅  |
 | [aargh](Pwn/aargh/)                                                     | Pwn           | SoEasY     | Hard        |  ✅  |
 | [MVBN](Reverse/MVBN/)                                                   | Reverse       | SoEasY     | Easy        |  ✅  |
-| [sELF control v2](Reverse/sELF_control_v2/)                             | Reverse       | SoEasY     | Medium      |  ❌  |
+| [sELF control v2](Reverse/sELF_control_v2/)                             | Reverse       | SoEasY     | Medium      |  ✅  |
 | [Resolver](Reverse/Resolver/)                                           | Reverse       | SoEasY     | Medium      |  ✅  |
 | [Turing](Reverse/Turing/)                                               | Reverse       | SoEasY     | Hard        |  ❌  |
 | [My Passwords](Forensics/MyPasswords)				                      | Forensics     | Worty      | Easy        |  ✅  |
