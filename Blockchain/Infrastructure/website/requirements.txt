@@ -37,6 +37,7 @@ pycryptodome==3.14.1
 Pygments==2.12.0
 pygments-json==0.1
 pyrsistent==0.18.1
+python-dotenv==0.20.0
 python-engineio==4.3.2
 python-socketio==5.6.0
 requests==2.27.1
@@ -49,3 +50,4 @@ web3==5.29.1
 websockets==9.1
 Werkzeug==2.1.2
 yarl==1.7.2
+
