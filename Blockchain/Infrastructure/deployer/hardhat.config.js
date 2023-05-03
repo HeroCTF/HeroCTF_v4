@@ -1,5 +1,9 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-web3");
+require("dotenv").config();
+
+const { PRIVATE_KEY } = process.env;
+
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -66,8 +70,7 @@ task("give_money", "Gives a user money")
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-module.exports = 
-{
+module.exports = {
   solidity: {
     compilers: [
       {
@@ -83,7 +86,7 @@ module.exports =
     melchain: 
     {
       url: `http://127.0.0.1:8502`,
-      accounts : ["YOUR_ACCOUNT_ADDRESS"]
+      accounts : [`${PRIVATE_KEY}`]
     }
   }
 };

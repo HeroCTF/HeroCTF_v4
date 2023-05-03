@@ -6,15 +6,26 @@ from pygments import highlight
 from pygments.lexers import (get_lexer_by_name, get_lexer_for_filename, get_lexer_for_mimetype, JsonLexer)
 from pygments.formatters import HtmlFormatter
 from subprocess import run, CalledProcessError
-from os import chdir
+from os import chdir, getcwd, environ
+from pathlib import Path
 from flask_socketio import SocketIO, emit
 import re
+from dotenv import load_dotenv
+
+load_dotenv()
+
+JSON_RPC_URL = environ.get("JSON_RPC_URL")
+ACCOUNT_ADDRESS = environ.get("ACCOUNT_ADDRESS")
+HTTP_IP = environ.get("HTTP_IP")
+HTTP_PORT = environ.get("HTTP_PORT")
+
+WEBSITE_PATH = getcwd()
+DEPLOYER_PATH = str(Path("../deployer").resolve())
 
 ## Time for some quick bad code
 app = Flask(__name__)
 socketio = SocketIO(app)
 
-deployer_dir = "/home/saltadmin/j_workspace/melgeth/deployer"
 
 ##
 ##  Assets
@@ -139,9 +150,9 @@ def challenges_deploy(message):
         for i in range(5):
             emit(f"challenge0{i}deploystatus" , {"output": f"Not a web challenge"})
             return
-    
+
     try:
-        chdir(deployer_dir)
+        chdir(DEPLOYER_PATH)
         print(f'npx hardhat run scripts/{deploy_script}.js')
         process = run(f'npx hardhat run scripts/{deploy_script}.js --network melchain', shell=True, check=True, capture_output=True)
         address = process.stdout.decode()
@@ -153,7 +164,7 @@ def challenges_deploy(message):
         print(e)
 
     finally:
-        chdir("/home/saltadmin/j_workspace/melgeth/website/")
+        chdir(WEBSITE_PATH)
 
 ##
 ##  On verify
@@ -164,7 +175,7 @@ def challenges_verify(message):
     challenge = message['data']
     address = message['address'].strip('\n')
     emit(f"{challenge}status" , {"output": "⬣ Verifying", "state" : 4})
-    client = Web3(Web3.HTTPProvider(f'http://127.0.0.1:8502'))
+    client = Web3(Web3.HTTPProvider(JSON_RPC_URL))
     # reentrancy
     if challenge == "challenge1":
         challenge_address = Web3.toChecksumAddress(address)
@@ -180,6 +191,7 @@ def challenges_verify(message):
         challenge_address = Web3.toChecksumAddress(address)
         print(challenge_address)
         client.middleware_onion.inject(geth_poa_middleware, layer=0)
+        print(getcwd());
         challenge_contract = client.eth.contract(address=challenge_address, abi=open('./abis/02.json').read())
         won = challenge_contract.functions.verify().call()
         if not won:
@@ -220,7 +232,7 @@ def get_money(message):
         print("NO MATCHLOL")
         return
     try:
-        chdir(deployer_dir)
+        chdir(DEPLOYER_PATH)
         print(f'npx hardhat give_money --account {address[:42]}')
         process = run(f'npx hardhat give_money --account {address[:42]} --network melchain', shell=True, check=True, capture_output=True)
         output = process.stdout.decode()
@@ -239,19 +251,20 @@ def get_money(message):
 ##  Utiities
 ##
 def get_stats():
-    client = Web3(Web3.HTTPProvider("http://127.0.0.1:8502"))
+    client = Web3(Web3.HTTPProvider(JSON_RPC_URL))
     client.middleware_onion.inject(geth_poa_middleware, layer=0)
     blocknumber = client.eth.get_block('latest').number
-    melSupplies = "{:.2e}".format(client.eth.get_balance(Web3.toChecksumAddress("0x68124ed2a425e9ec16083c8322058dd5a4193466")))
+    melSupplies = "{:.2e}".format(client.eth.get_balance(Web3.toChecksumAddress(ACCOUNT_ADDRESS)))
 
     return (blocknumber, melSupplies)
 
 def get_visu():
-    client = Web3(Web3.HTTPProvider("http://127.0.0.1:8502"))
+    client = Web3(Web3.HTTPProvider(JSON_RPC_URL))
     client.middleware_onion.inject(geth_poa_middleware, layer=0)
     curr_block = dict(client.eth.get_block('latest'))
     # Lol ?
     del curr_block["transactions"]
     return curr_block
 
-socketio.run(app, host="0.0.0.0", port=22000)
+print(f"Running server on http://{HTTP_IP}:{HTTP_PORT}")
+socketio.run(app, host=HTTP_IP, port=int(HTTP_PORT))
